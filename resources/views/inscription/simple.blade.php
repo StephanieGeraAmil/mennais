@@ -125,7 +125,8 @@
   </div>--}}
   <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
-    <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" onchange="togglePaymentDiv()">
+    <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+          {{-- <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" onchange="togglePaymentDiv()"> --}}
       <option value="">Modalidad</option>
       <option value="virtual" {{(old('type') =="virtual")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::REMOTO->text()}}</option>
       <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option>
@@ -259,12 +260,12 @@
             const modalidad = document.getElementById('type').value;
             const paymentDiv = document.getElementById('payment_div');
             console.log(modalidad);
-            if (modalidad === 'hibrido') {
-                console.log("in completa")
-                paymentDiv.style.display = 'none';
-            } else {
+            // if (modalidad === 'hibrido') {
+            //     console.log("in completa")
+            //     paymentDiv.style.display = 'none';
+            // } else {
                 paymentDiv.style.display = 'block';
-            }
+            // }
         }
 
        
