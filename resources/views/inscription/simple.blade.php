@@ -259,12 +259,12 @@
             const modalidad = document.getElementById('type').value;
             const paymentDiv = document.getElementById('payment_div');
             console.log(modalidad);
-            if (modalidad === 'hibrido') {
-                console.log("in completa")
-                paymentDiv.style.display = 'none';
-            } else {
+            // if (modalidad === 'hibrido') {
+            //     console.log("in completa")
+            //     paymentDiv.style.display = 'none';
+            // } else {
                 paymentDiv.style.display = 'block';
-            }
+            // }
         }
 
        
