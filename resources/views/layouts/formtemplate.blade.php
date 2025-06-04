@@ -40,7 +40,7 @@
       </div>
     </header> --}}
     <section class="u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-xl" id="sec-3ffd">
-    <div class="u-clearfix u-sheet u-sheet-1">
+    <div class="">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
             <div class="u-gutter-0 u-layout">
                 <div class="u-layout-col">
