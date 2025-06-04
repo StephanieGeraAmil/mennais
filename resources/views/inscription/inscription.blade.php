@@ -123,15 +123,17 @@
       <option value="interior" {{(old('extra.place') =="interior")?"Selected":""}}>Interior</option>
     </select>
   </div>--}}
-  <div class="u-form-group u-form-group-11">
+  {{-- <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
     <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
-          {{-- <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" onchange="togglePaymentDiv()"> --}}
+        
       <option value="">Modalidad</option>
       <option value="virtual" {{(old('type') =="virtual")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::REMOTO->text()}}</option>
       <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option>
     </select>
-  </div> 
+  </div>  --}}
+
+    {{-- <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" onchange="togglePaymentDiv()"> --}}
         <div class="u-form-group u-form-name">
             <label for="name-05a8" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Nombre" id="name-05a8" name="name"
@@ -163,20 +165,20 @@
                 class="u-input u-input-rectangle u-radius-14 u-input-6">
         </div>
         <div class="u-form-group u-form-select u-form-group-7">
-            <label for="select-c14a" class="u-label">Nivel</label>
             <div class="u-form-select-wrapper">
                 <select id="select-c14a" name="institution_type" class="u-input u-input-rectangle u-radius-14">
+                      <option value="">Nivel</option>
                     <option value="Educación Inicial" data-calc="">Educación Inicial</option>
                     <option value="Primaria" data-calc="">Primaria</option>
                     <option value="Secundaria" data-calc="">Secundaria</option>
                     <option value="Dirección General" data-calc="">Dirección General</option>
                     <option value="Otro" data-calc="">Otro</option>
                 </select>
-                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                {{-- <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
                     viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve">
                     <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
-                </svg>
+                </svg> --}}
             </div>
         </div>
         {{-- <div class="u-form-group u-form-group-8">
