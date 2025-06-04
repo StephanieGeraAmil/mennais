@@ -47,7 +47,7 @@
                     @yield('notifications')              
                     <div class="u-size-30">
                         <div class="u-layout-row">
-                            <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2">
+                            {{-- <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2">
                                 <div class="u-container-layout u-container-layout-2">
                                     <h4 class="u-text u-text-2">@yield('subtitle')</h4>
                                     
@@ -58,7 +58,7 @@
                                     </div>
                                     @yield('left-form')
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-3">
                                 <div class="u-container-layout u-container-layout-4">
                                     <div class="u-form u-form-1">
@@ -74,7 +74,7 @@
     </div>
 </section>
 <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
-    background-color: #756c90 !important
+    background-color: #000435 !important
 }</style>
 
 
