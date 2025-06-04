@@ -1,6 +1,6 @@
 @extends('layouts.formtemplate')
 @section('title')
-AAAAAA
+    Inscripción Indivudual
 @endsection
 @section('notifications')
     @if (Session::has('msg'))
@@ -15,7 +15,7 @@ AAAAAA
         </div>
     @endif
     @if ($errors->any())
-        <div class="u-size-30">
+        <div class="u-size-30 bg-red">
             <div class="u-layout-col">
                 <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
                     <div class="u-container-layout u-valign-middle u-container-layout-1">
@@ -134,14 +134,14 @@ AAAAAA
   </div> 
         <div class="u-form-group u-form-name">
             <label for="name-05a8" class="u-form-control-hidden u-label"></label>
-            <input type="text" placeholder="Nombre Completo" id="name-05a8" name="name"
+            <input type="text" placeholder="Nombre" id="name-05a8" name="name"
                 class="u-input u-input-rectangle u-radius-14 u-input-1" required="">
         </div>
-        {{-- <div class="u-form-group u-form-group-2">
+        <div class="u-form-group u-form-group-2">
             <label for="text-8cb6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Apellido" id="text-8cb6" name="lastname"
                 class="u-input u-input-rectangle u-radius-14 u-input-2">
-        </div> --}}
+        </div>
         <div class="u-form-group u-form-name u-form-group-3">
             <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Cédula de Identidad (1234567-8)" id="name-b2b6" name="document"
@@ -157,12 +157,12 @@ AAAAAA
             <input type="tel" placeholder="Teléfono" id="phone-bfdf" name="phone"
                 class="u-input u-input-rectangle u-radius-14 u-input-5" required="">
         </div> --}}
-        {{-- <div class="u-form-group u-form-group-6">
+        <div class="u-form-group u-form-group-6">
             <label for="text-59c6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Institución" id="text-59c6" name="institution_name"
                 class="u-input u-input-rectangle u-radius-14 u-input-6">
-        </div> --}}
-        {{-- <div class="u-form-group u-form-select u-form-group-7">
+        </div>
+        <div class="u-form-group u-form-select u-form-group-7">
             <label for="select-c14a" class="u-label">Nivel</label>
             <div class="u-form-select-wrapper">
                 <select id="select-c14a" name="institution_type" class="u-input u-input-rectangle u-radius-14">
@@ -178,7 +178,7 @@ AAAAAA
                     <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
                 </svg>
             </div>
-        </div> --}}
+        </div>
         {{-- <div class="u-form-group u-form-group-8">
             <label for="text-8b97" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Ciudad" id="text-8b97" name="city"
@@ -186,11 +186,11 @@ AAAAAA
         </div> --}}
         <div id="payment_div" class="full_width">
 
-            <div class="u-form-group u-form-group-9">
+            {{-- <div class="u-form-group u-form-group-9">
                 <label for="text-1207" class="u-form-control-hidden u-label"></label>
                 <input type="text" placeholder="Monto depositado" id="text-1207" name="amount"
                 class="u-input u-input-rectangle u-radius-14 u-input-9">
-            </div>
+            </div> --}}
             <div class="u-form-group u-form-group-11">
                 <label for="text-c55e" class="u-form-control-hidden u-label"></label>
                 <input type="file" placeholder="Adjunte un comprobante de pago" id="payment_file-4c18"
