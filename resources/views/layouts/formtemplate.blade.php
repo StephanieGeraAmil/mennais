@@ -59,8 +59,8 @@
                                     @yield('left-form')
                                 </div>
                             </div> --}}
-                            <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-3">
-                                <div class="u-container-layout u-container-layout-4">
+                            <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 ">
+                                <div class="u-container-layout ">
                                     <div class="u-form u-form-1">
                                         @yield('form')
                                     </div>
