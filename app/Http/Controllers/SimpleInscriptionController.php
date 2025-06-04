@@ -18,7 +18,7 @@ class SimpleInscriptionController extends Controller
     
     public function simpleInscription()
     {
-        return view('inscription.simple');
+        return view('inscription.inscription');
     }
     
     
