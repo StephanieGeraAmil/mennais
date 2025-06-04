@@ -24,7 +24,7 @@
 		"@type": "Organization",
 		"name": "PROEDUCAR"
 }</script>
-    <meta name="theme-color" content="#ddd6f3">
+    <meta name="theme-color" content="#000435">
     <meta property="og:title" content="Inscripción Indivudual">
     <meta property="og:description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
     <meta property="og:type" content="website">

@@ -90,9 +90,9 @@
 @section('subtitle')
     INSCRIPCIÓN INDIVIDUAL
 @endsection
-@section('left-text-box')
+{{-- @section('left-text-box')
     Por favor, complete el formulario con sus datos.
-@endsection
+@endsection --}}
 @section('form')
     <input type="hidden" id="old_first_workshop_group_id" value={{ old('first_workshop_group_id') ?? 0 }}>
     <input type="hidden" id="old_second_workshop_group_id" value={{ old('second_workshop_group_id') ?? 0 }}>
