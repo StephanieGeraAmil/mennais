@@ -29,7 +29,7 @@
                             @error('document')
                                 @if ($message == 'The document has already been taken.')
                                     Su cédula de indentidad ya se encuentra inscripta. <BR />
-                                    Si aún no recibió el email de confirmación, comuniquese con audec.<br />
+                                    Si aún no recibió el email de confirmación, comuniquese con La Mennais.<br />
                                 @else
                                     El campo cédula no es válido.<br />
                                 @endif
@@ -40,12 +40,12 @@
                             {{-- @error('phone')
                                 El campo teléfono no es correcto.<br />
                             @enderror --}}
-                            {{-- @error('extra.place')
+                            @error('extra.place')
                                 Debe seleccionar el Origen.<br />
                             @enderror
                             @error('type')
                                 Debe seleccionar la modalidad.<br />
-                            @enderror --}}
+                            @enderror
                             {{-- @error('institution_name')
                                 El campo institución no es correcto.<br />
                             @enderror
@@ -94,8 +94,8 @@
     Por favor, complete el formulario con sus datos.
 @endsection
 @section('form')
-    {{-- <input type="hidden" id="old_first_workshop_group_id" value={{ old('first_workshop_group_id') ?? 0 }}>
-    <input type="hidden" id="old_second_workshop_group_id" value={{ old('second_workshop_group_id') ?? 0 }}> --}}
+    <input type="hidden" id="old_first_workshop_group_id" value={{ old('first_workshop_group_id') ?? 0 }}>
+    <input type="hidden" id="old_second_workshop_group_id" value={{ old('second_workshop_group_id') ?? 0 }}>
     <form action="/store_inscription" method="POST" class="u-clearfix u-form-spacing-12 u-form-vertical u-inner-form"
         source="custom" name="Inscripción Individual" style="padding: 18px 0px;" enctype="multipart/form-data">
         @csrf
@@ -131,9 +131,9 @@
         <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option>
     </select>
 </div>  --}}
-<input type="hidden" name="type" value="hibrido">
 {{-- <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" onchange="togglePaymentDiv()"> --}}
-        <div class="u-form-group u-form-name">
+    <input type="hidden" name="type" value="hibrido">  
+    <div class="u-form-group u-form-name">
             <label for="name-05a8" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Nombre Completo" id="name-05a8" name="name"
                 class="u-input u-input-rectangle u-radius-14 u-input-1" required="">
@@ -163,11 +163,6 @@
             <input type="text" placeholder="Institución" id="text-59c6" name="institution_name"
                 class="u-input u-input-rectangle u-radius-14 u-input-6">
         </div>
-                {{-- <div class="u-form-group u-form-group-6">
-            <label for="text-59c6" class="u-form-control-hidden u-label"></label>
-            <input type="text" placeholder="Ciudad" id="text-59c6" name="city"
-                class="u-input u-input-rectangle u-radius-14 u-input-6">
-        </div> --}}
         <div class="u-form-group u-form-select u-form-group-7">
             <label for="select-c14a" class="u-label">Nivel</label>
             <div class="u-form-select-wrapper">
@@ -192,12 +187,12 @@
         </div> --}}
         <div id="payment_div" class="full_width">
 
-            {{-- <div class="u-form-group u-form-group-9">
+            <div class="u-form-group u-form-group-9">
                 <label for="text-1207" class="u-form-control-hidden u-label"></label>
                 <input type="text" placeholder="Monto depositado" id="text-1207" name="amount"
                 class="u-input u-input-rectangle u-radius-14 u-input-9">
-            </div> --}}
-            <div class="u-form-group u-form-group-11 space_above">
+            </div>
+            <div class="u-form-group u-form-group-11">
                 <label for="text-c55e" class="u-form-control-hidden u-label"></label>
                 <input type="file" placeholder="Adjunte un comprobante de pago" id="payment_file-4c18"
                 name="payment_file" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10"
@@ -205,7 +200,7 @@
                 <div style="width: 100%;text-align: center;"><small>Adjunte el comprobante de pago (pdf o jpg)</small></div>
             </div>
         </div>
-            <div class="u-align-right u-form-group u-form-submit button-save">
+            <div class="u-align-right u-form-group u-form-submit">
                 <a onclick="$(this).closest('form').submit()"
                 class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">Enviar</a>
         </div>
@@ -213,66 +208,66 @@
 @endsection
 @section('custom_script')
     <script>
-        // jQuery(document).ready(function() {
-        //     loadSecondWorkshopGroup();
-        //     $('#first_workshop_group_id').change(function(ev) {
-        //         loadSecondWorkshopGroup();
-        //     });
-        //     loadOldWorkShops();
-        //      togglePaymentDiv();
-        // });
+        jQuery(document).ready(function() {
+            loadSecondWorkshopGroup();
+            $('#first_workshop_group_id').change(function(ev) {
+                loadSecondWorkshopGroup();
+            });
+            loadOldWorkShops();
+             togglePaymentDiv();
+        });
 
-        // function loadSecondWorkshopGroup() {
-        //     let first_workshop_group = $('#first_workshop_group_id').val();
-        //     let second_workshop_group = $('#second_workshop_group_id');
-        //     $.ajax({
-        //         url: '/api/second_workshop_group/' + first_workshop_group,
-        //         async: false
-        //     }).done(function(data) {
-        //         second_workshop_group.children().remove();
-        //         if ('data' in data) {
-        //             if (Array.isArray(data.data)) {
-        //                 data.data.forEach(function(valor, indice, array) {
-        //                     second_workshop_group.append(new Option(valor.text, valor.id));
-        //                 });
-        //                 second_workshop_group.append(new Option('No asistiré en este horario.', 0));
-        //             }
-        //         }
-        //     });
-        // }
+        function loadSecondWorkshopGroup() {
+            let first_workshop_group = $('#first_workshop_group_id').val();
+            let second_workshop_group = $('#second_workshop_group_id');
+            $.ajax({
+                url: '/api/second_workshop_group/' + first_workshop_group,
+                async: false
+            }).done(function(data) {
+                second_workshop_group.children().remove();
+                if ('data' in data) {
+                    if (Array.isArray(data.data)) {
+                        data.data.forEach(function(valor, indice, array) {
+                            second_workshop_group.append(new Option(valor.text, valor.id));
+                        });
+                        second_workshop_group.append(new Option('No asistiré en este horario.', 0));
+                    }
+                }
+            });
+        }
 
-        // function loadOldWorkShops() {
-        //     let old_first_workshop_group = $('#old_first_workshop_group_id').val();
-        //     let old_second_workshop_group = $('#old_second_workshop_group_id').val();
-        //     if (old_first_workshop_group > 0) {
-        //         let first_workshop_group = $('#first_workshop_group_id').val(old_first_workshop_group);
-        //     }
-        //     if (old_second_workshop_group > 0) {
-        //         let first_workshop_group = $('#second_workshop_group_id').val(old_second_workshop_group);
-        //     }
-        // }
+        function loadOldWorkShops() {
+            let old_first_workshop_group = $('#old_first_workshop_group_id').val();
+            let old_second_workshop_group = $('#old_second_workshop_group_id').val();
+            if (old_first_workshop_group > 0) {
+                let first_workshop_group = $('#first_workshop_group_id').val(old_first_workshop_group);
+            }
+            if (old_second_workshop_group > 0) {
+                let first_workshop_group = $('#second_workshop_group_id').val(old_second_workshop_group);
+            }
+        }
 
 
 
-        // function clean_document(element) {
-        //     let input = $(element);
-        //     let input_val = input.val();
-        //     new_input_val = input_val.replace(/\D/g, "");
-        //     input.val(new_input_val);
-        // }
+        function clean_document(element) {
+            let input = $(element);
+            let input_val = input.val();
+            new_input_val = input_val.replace(/\D/g, "");
+            input.val(new_input_val);
+        }
 
-        //  function togglePaymentDiv() {
-        //     console.log("in toggle");
-        //     const modalidad = document.getElementById('type').value;
-        //     const paymentDiv = document.getElementById('payment_div');
-        //     console.log(modalidad);
-        //     // if (modalidad === 'hibrido') {
-        //     //     console.log("in completa")
-        //     //     paymentDiv.style.display = 'none';
-        //     // } else {
-        //         paymentDiv.style.display = 'block';
-        //     // }
-        // }
+         function togglePaymentDiv() {
+            console.log("in toggle");
+            const modalidad = document.getElementById('type').value;
+            const paymentDiv = document.getElementById('payment_div');
+            console.log(modalidad);
+            // if (modalidad === 'hibrido') {
+            //     console.log("in completa")
+            //     paymentDiv.style.display = 'none';
+            // } else {
+                paymentDiv.style.display = 'block';
+            // }
+        }
 
        
     </script>

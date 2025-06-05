@@ -31,7 +31,7 @@ class RecoveryCertificateMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('PROEDUCAR 2025 - CONECTAR PARA EDUCAR - Certificado')->view('emails.recoverycertificate')
+        return $this->subject('CONGRESO PEDAGOGICO LA MENNAIS - EDUCACION EMOCIONAL- Desarollando competencias para el siglo XXI EDUCAR - Certificado')->view('emails.recoverycertificate')
         ->with('inscription',$this->inscription);
     }
 }
