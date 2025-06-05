@@ -11,5 +11,5 @@
 Saludos,
 </p>
 <p>
-AUDEC.
+La Mennais.
 </p>

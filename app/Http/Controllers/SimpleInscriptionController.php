@@ -72,7 +72,7 @@ class SimpleInscriptionController extends Controller
         } catch (\Throwable $th) {
             Log::error("error: ".$th);
             Log::error("SimpleInscriptionController::Email: ".$user_data->email."; ".env('ADMIN_EMAIL'));
-            session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con Audec');
+            session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con  La Mennais');
         }        
         
         session()->flash('msg', 'Inscripción realizada con exito!!!');

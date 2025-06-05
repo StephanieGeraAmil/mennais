@@ -7,7 +7,7 @@ Educación
 Uruguay
 Congreso
 transformación Educativa">
-    <meta name="description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
+       <meta name="description" content="Congreso pedagógico organizado por La Mennais">
     <title>Inscripcion IndivIdual</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="Inscripcion-IndivIdual.css" media="screen">
@@ -27,8 +27,8 @@ transformación Educativa">
 }</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="Inscripcion IndivIdual">
-    <meta property="og:description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
-    <meta property="og:type" content="website">
+        <meta name="description" content="Congreso pedagógico organizado por La Mennais">
+       <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es">
     <header class="u-clearfix u-container-align-left-xl u-header u-palette-1-dark-1 u-sticky u-sticky-387b" id="sec-055d" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-xl u-valign-middle-xs u-sheet-1">

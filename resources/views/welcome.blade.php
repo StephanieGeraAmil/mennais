@@ -7,7 +7,7 @@ Educación
 Uruguay
 Congreso
 transformación Educativa">
-    <meta name="description" content="La transformación educativa en acción es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
+    <meta name="description" content="Congreso pedagógico organizado por La Mennais">
     <title>zoom</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
     <link rel="stylesheet" href="/css/zoom.css" media="screen">
@@ -21,11 +21,11 @@ transformación Educativa">
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
-		"name": "AUDEC_EF_ago_oct_23"
+		"name": "CP_MENNAIS"
 }</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="zoom">
-    <meta property="og:description" content="La transformación educativa en acción es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
+       <meta name="description" content="Congreso pedagógico organizado por La Mennais">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
 

@@ -16,7 +16,7 @@
 <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
-		"name": "AUDEC_PE_feb_24"
+		"name": "CP_MENNAIS4"
 }</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="Inicio">

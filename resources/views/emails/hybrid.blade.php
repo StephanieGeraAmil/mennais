@@ -12,7 +12,7 @@ El día de la sesión virtual,  a la hora del evento, podrá conectarse a travé
     Saludos,
 </p>
 <p>
-    AUDEC.
+    La Mennais.
 </p>
 
 

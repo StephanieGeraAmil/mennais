@@ -26,7 +26,7 @@ transformación Educativa">
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
-		"name": "AUDEC_PE_feb_25"
+		"name": "CP_MENNAIS"
 }</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="Inicio">
@@ -189,10 +189,10 @@ transformación Educativa">
                                 class="u-align-center u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2">
                                 <div class="u-container-layout u-valign-middle u-container-layout-4">
                                     <h3 class="u-align-center u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-3">Participación PARCIAL</h3>
-                      <p class="u-align-center u-text u-text-palette-1-dark-3 u-text-4">Incluye SÓLO la sesión VIRTUAL<br>Socios AUDEC: $ 400<br>No Socios: $ 500<br>
+                      {{-- <p class="u-align-center u-text u-text-palette-1-dark-3 u-text-4">Incluye SÓLO la sesión VIRTUAL<br>Socios AUDEC: $ 400<br>No Socios: $ 500<br>
                       </p>
                       <p class="u-align-left u-text u-text-5"> El pago de la Participación PARCIAL se realiza en:<br><b>SANTANDER CC Pesos Nº </b>000000256277&nbsp;- Sucursal 62<br>a nombre de la Asociación Uruguaya de Educación Católica.
-                      </p>
+                      </p> --}}
                                 </div>
                             </div>
                         </div>

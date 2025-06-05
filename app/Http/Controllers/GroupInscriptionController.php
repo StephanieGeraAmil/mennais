@@ -91,14 +91,14 @@ class GroupInscriptionController extends Controller
             session()->flash('msg', 'Inscripción realizada con exito!!!');
         } catch (\Throwable $th) {
             Log::error("GroupInscriptionController::Email: ".$group_inscription->email."; ".env('ADMIN_EMAIL'));
-            session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con Audec');
+            session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con  La Mennais');
         }
         try {
             Mail::to(env('ADMIN_EMAIL'))->send(new AdminGroupInscriptionMail($group_inscription));
             session()->flash('msg', 'Inscripción realizada con exito!!!');
         } catch (\Throwable $th) {
             Log::error("GroupInscriptionController::Email: ".$group_inscription->email."; ".env('ADMIN_EMAIL'));
-            session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con Audec');
+            session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con  La Mennais');
         }        
         return redirect($group_inscription->getUrl());        
     }

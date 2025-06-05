@@ -19,7 +19,7 @@
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
-		"name": "AUDEC_PE_feb_25"
+		"name": "CP_MENNAIS"
 }</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="Inicio">
@@ -147,8 +147,8 @@ CONECTAR PARA EDUCAR">
                       <h3 class="u-align-center u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-3">Participación PARCIAL</h3>
                       <p class="u-align-center u-text u-text-palette-1-dark-3 u-text-4">Incluye SÓLO la sesión VIRTUAL<br>Socios AUDEC: $ 400<br>No Socios: $ 500<br>
                       </p>
-                      <p class="u-align-left u-text u-text-5"> El pago de la Participación PARCIAL se realiza en:<br><b>SANTANDER CC Pesos Nº </b>000000256277&nbsp;- Sucursal 62<br>a nombre de la Asociación Uruguaya de Educación Católica.
-                      </p>
+                      <!-- <p class="u-align-left u-text u-text-5"> El pago de la Participación PARCIAL se realiza en:<br><b>SANTANDER CC Pesos Nº </b>000000256277&nbsp;- Sucursal 62<br>a nombre de la Asociación Uruguaya de Educación Católica.
+                      </p> -->
                     </div>
                   </div>
                 </div>

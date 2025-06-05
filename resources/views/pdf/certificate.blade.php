@@ -27,7 +27,7 @@
     
     <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
         Ha participado de {{env('EVENT_NAME')}}, <BR/>
-        organizado por AUDEC, el día {!! $attendance_text !!}
+        organizado por La Mennais, el día {!! $attendance_text !!}
   
     </div>
 </body>

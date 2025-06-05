@@ -29,7 +29,7 @@
                             @error('document')
                                 @if ($message == 'The document has already been taken.')
                                     Su cédula de indentidad ya se encuentra inscripta. <BR />
-                                    Si aún no recibió el email de confirmación, comuniquese con audec.<br />
+                                    Si aún no recibió el email de confirmación, comuniquese con La Mennais.<br />
                                 @else
                                     El campo cédula no es válido.<br />
                                 @endif

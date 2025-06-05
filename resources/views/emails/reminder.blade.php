@@ -30,7 +30,7 @@
 <p>Lo esperamos,</p>--}}
 
 <p>Saludos,</p>
-<p>Equipo de AUDEC.</p>
+<p>Equipo de La Mennais.</p>
 
 
 
