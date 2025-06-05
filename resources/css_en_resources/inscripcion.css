@@ -27,8 +27,8 @@
 }
 
 .body-insc {
-    background-color: yellow;
-    width: 70%;
+    background-color: #17207f;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
