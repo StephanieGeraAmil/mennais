@@ -16,10 +16,10 @@
             <td>E-Mail</td>
             <td>{{$inscription->userData->email}}</td>
         </tr>
-        <tr>
+        {{-- <tr>
             <td>Tipo</td>
             <td>{{$inscription->type->text()}}</td>
-        </tr>
+        </tr> --}}
         {{-- <tr>
             <td>Monto</td>
             <td>{{$inscription->payment->amount_deposited}}</td>
