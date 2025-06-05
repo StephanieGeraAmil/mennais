@@ -75,7 +75,7 @@ Route::post('/admin/attendance', [AdminController::class,'manualAttendance'])->m
 
 // Route::resource('/inscription', InscriptionController::class);
 Route::resource('/admin/', AdminController::class)->middleware('auth');
-Route::resource('/admin/inscription',CodeInscriptionController::class)->middleware('auth');
+Route::resource('/admin/inscription',AdminInscriptionController::class)->middleware('auth');
 Route::resource('/admin/user_data', UserDataController::class)->middleware('auth');
 
 Route::get('/inscription',[SimpleInscriptionController::class,'simpleInscription']); 
