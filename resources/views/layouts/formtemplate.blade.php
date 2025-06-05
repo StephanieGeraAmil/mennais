@@ -40,13 +40,13 @@
       </div>
     </header> --}}
     <section class="u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-xl" id="sec-3ffd">
-    <div class="">
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-            <div class="u-gutter-0 u-layout">
-                <div class="u-layout-col">
+    {{-- <div class=""> --}}
+        {{-- <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+            <div class="u-gutter-0 u-layout"> --}}
+                <div class="body-insc">
                     @yield('notifications')              
-                    <div class="u-size-30">
-                        <div class="u-layout-row">
+                    {{-- <div class="u-size-30">
+                        <div class="u-layout-row"> --}}
                             {{-- <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2">
                                 <div class="u-container-layout u-container-layout-2">
                                     <h4 class="u-text u-text-2">@yield('subtitle')</h4>
@@ -59,19 +59,21 @@
                                     @yield('left-form')
                                 </div>
                             </div> --}}
-                            <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 ">
-                                <div class="u-container-layout ">
-                                    <div class="u-form u-form-1">
+                            {{-- <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 "> --}}
+                                 
+                                {{-- <div class="u-container-layout "> --}}
+                                    {{-- <div class="u-form u-form-1"> --}}
+                                                 <div class="form-section">
                                         @yield('form')
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                {{-- </div>
+                            </div> --}}
+                        {{-- </div>
+                    </div> --}}
+                {{-- </div>
+            </div> --}}
         </div>
-    </div>
+    {{-- </div> --}}
 </section>
 <style class="u-overlap-style">.u-body {
     background-color: #000435 !important
