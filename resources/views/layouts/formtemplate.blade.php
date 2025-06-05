@@ -76,7 +76,7 @@
     {{-- </div> --}}
 </section>
 <style class="u-overlap-style">.u-body {
-    background-color: #000435 !important
+    background-color: #17207f !important
 }</style>
 {{-- <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
     background-color: #000435 !important
