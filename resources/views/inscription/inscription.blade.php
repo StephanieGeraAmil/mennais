@@ -94,8 +94,9 @@
     Por favor, complete el formulario con sus datos.
 @endsection --}}
 @section('form')
-    <input type="hidden" id="old_first_workshop_group_id" value={{ old('first_workshop_group_id') ?? 0 }}>
-    <input type="hidden" id="old_second_workshop_group_id" value={{ old('second_workshop_group_id') ?? 0 }}>
+    {{-- <input type="hidden" id="old_first_workshop_group_id" value={{ old('first_workshop_group_id') ?? 0 }}>
+    <input type="hidden" id="old_second_workshop_group_id" value={{ old('second_workshop_group_id') ?? 0 }}> --}}
+        <input type="hidden" name="type" value="hibrido">  
     <form action="/store_inscription" method="POST" class="u-clearfix u-form-spacing-12 u-form-vertical u-inner-form"
         source="custom" name="Inscripción Individual" style="padding: 18px 0px;" enctype="multipart/form-data">
         @csrf
@@ -136,14 +137,14 @@
     {{-- <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" onchange="togglePaymentDiv()"> --}}
         <div class="u-form-group u-form-name">
             <label for="name-05a8" class="u-form-control-hidden u-label"></label>
-            <input type="text" placeholder="Nombre" id="name-05a8" name="name"
+            <input type="text" placeholder="Nombre Completo" id="name-05a8" name="name"
                 class="u-input u-input-rectangle u-radius-14 u-input-1" required="">
         </div>
-        <div class="u-form-group u-form-group-2">
+        {{-- <div class="u-form-group u-form-group-2">
             <label for="text-8cb6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Apellido" id="text-8cb6" name="lastname"
                 class="u-input u-input-rectangle u-radius-14 u-input-2">
-        </div>
+        </div> --}}
         <div class="u-form-group u-form-name u-form-group-3">
             <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Cédula de Identidad (1234567-8)" id="name-b2b6" name="document"
