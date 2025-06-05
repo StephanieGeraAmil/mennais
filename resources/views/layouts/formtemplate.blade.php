@@ -63,7 +63,7 @@
                                  
                                 {{-- <div class="u-container-layout "> --}}
                                     {{-- <div class="u-form u-form-1"> --}}
-                                                 <div class="form-section">
+                                                 <div class="">
                                         @yield('form')
                                     </div>
                                 {{-- </div>
