@@ -16,8 +16,8 @@
     Cordiales saludos;
 </p>
 <p>
-    Equipo de AUDEC<BR/>
-    Asociación Uruguaya de Educación Católica
+    Equipo de La Mennais<BR/>
+   
 </p>
 
 

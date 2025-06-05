@@ -42,15 +42,15 @@ class Inscription extends Model
     }
 
     public function url(){
-        return env("APP_URL", "https://audec.org")."/attendance/".$this->id."/".$this->generateToken();
+        return env("APP_URL", "https://mennais.proeventos.com.uy")."/attendance/".$this->id."/".$this->generateToken();
     }
 
     public function qrUrl(){
-        return env("APP_URL", "https://audec.org")."/attendance_presencial/".$this->id."/".$this->generateToken();
+        return env("APP_URL", "https://mennais.proeventos.com.uy")."/attendance_presencial/".$this->id."/".$this->generateToken();
     }
 
     public function certificateUrl(){
-        return env("APP_URL", "https://audec.org")."/certificate/".$this->id."/".$this->generateToken();
+        return env("APP_URL", "https://mennais.proeventos.com.uy")."/certificate/".$this->id."/".$this->generateToken();
     }
 
     public function validateToken($token){       
