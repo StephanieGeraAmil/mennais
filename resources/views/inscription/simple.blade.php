@@ -123,16 +123,17 @@
       <option value="interior" {{(old('extra.place') =="interior")?"Selected":""}}>Interior</option>
     </select>
   </div>--}}
-  <div class="u-form-group u-form-group-11">
+  {{-- <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
     <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
-          {{-- <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" onchange="togglePaymentDiv()"> --}}
-      <option value="">Modalidad</option>
-      <option value="virtual" {{(old('type') =="virtual")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::REMOTO->text()}}</option>
-      <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option>
+        <option value="">Modalidad</option>
+        <option value="virtual" {{(old('type') =="virtual")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::REMOTO->text()}}</option>
+        <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option>
     </select>
-  </div> 
-        <div class="u-form-group u-form-name">
+</div>  --}}
+{{-- <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" onchange="togglePaymentDiv()"> --}}
+    <input type="hidden" name="type" value="hibrido">  
+    <div class="u-form-group u-form-name">
             <label for="name-05a8" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Nombre Completo" id="name-05a8" name="name"
                 class="u-input u-input-rectangle u-radius-14 u-input-1" required="">
@@ -157,12 +158,12 @@
             <input type="tel" placeholder="Teléfono" id="phone-bfdf" name="phone"
                 class="u-input u-input-rectangle u-radius-14 u-input-5" required="">
         </div> --}}
-        {{-- <div class="u-form-group u-form-group-6">
+        <div class="u-form-group u-form-group-6">
             <label for="text-59c6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Institución" id="text-59c6" name="institution_name"
                 class="u-input u-input-rectangle u-radius-14 u-input-6">
-        </div> --}}
-        {{-- <div class="u-form-group u-form-select u-form-group-7">
+        </div>
+        <div class="u-form-group u-form-select u-form-group-7">
             <label for="select-c14a" class="u-label">Nivel</label>
             <div class="u-form-select-wrapper">
                 <select id="select-c14a" name="institution_type" class="u-input u-input-rectangle u-radius-14">
@@ -178,7 +179,7 @@
                     <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
                 </svg>
             </div>
-        </div> --}}
+        </div>
         {{-- <div class="u-form-group u-form-group-8">
             <label for="text-8b97" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Ciudad" id="text-8b97" name="city"
