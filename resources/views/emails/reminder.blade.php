@@ -8,10 +8,10 @@
     <img src="{!!$message->embedData(QrCode::format('png')->generate($inscription->qrUrl()), 'QrCode.png', 'image/png')!!}">
 </p>
 @endif
-<p>Sesión Virtual:</p>
+{{-- <p>Sesión Virtual:</p>
 <p>20 de febrero 14:00 h </p>
 <p>Podrá acceder a las dos sesiones unos minutos antes del comienzo a través del <strong>link</strong> :
- <button style="font-weight: bold; font: inherit; cursor: pointer; color: blue;" onclick="window.open('{!!$inscription->url()!!}', '_blank')">Acceso al Zoom</button></p>
+ <button style="font-weight: bold; font: inherit; cursor: pointer; color: blue;" onclick="window.open('{!!$inscription->url()!!}', '_blank')">Acceso al Zoom</button></p> --}}
 
 <!--<p>Le recordamos que está inscripto PROEDUCAR XXXII - HACIA UNA INNOVACIÓN CON SENTIDO.</p>-->
 <!--<p>Lo esperamos el próximo jueves 8 de febrero a las 8:00 HS en el SALÓN DE ACTOS DEL COLEGIO SANTO DOMINGO  - PALMAR 2288 ESQ. ACEVEDO DÍAZ.</p>-->
