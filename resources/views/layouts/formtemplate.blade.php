@@ -59,6 +59,9 @@
                                     @yield('left-form')
                                 </div>
                             </div> --}}
+                            <div class="u-form u-form-1 logo">
+                                       <img src="/images/logo.png" alt="Logo" class="u-image u-logo-image u-logo-image-1">
+                                    </div>
                             <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-3">
                                 <div class="u-container-layout u-container-layout-4">
                                     <div class="u-form u-form-1 form-section">
