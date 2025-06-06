@@ -2,8 +2,15 @@
     padding-top: 20px;
 }
 .u-section-1 {
-    background-image: linear-gradient(#b8aed9, rgba(252, 209, 207, 0.75));
-    padding-top: 55px;
+    /* background-image: linear-gradient(#b8aed9, rgba(252, 209, 207, 0.75)); */
+    /* padding-top: 55px; */
+    width: 100% !important;
+    background-color: #14529b !important;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .certificate_form {
     margin: 10px 0;
@@ -343,6 +350,7 @@
 }
 
 .body-insc {
+    width: 100% !important;
     background-color: #14529b !important;
     width: 60%;
     margin: 0 auto;
