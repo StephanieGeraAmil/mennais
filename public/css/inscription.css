@@ -368,11 +368,10 @@
     gap: 10px;
 }
 .button_section {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 .button-save {
     background-color: #0a345e !important;
@@ -383,7 +382,9 @@
     cursor: pointer;
     border-radius: 5px;
 }
-
+.logo {
+    width: 100%;
+}
 .logo_img {
     width: 100%;
     height: auto;
