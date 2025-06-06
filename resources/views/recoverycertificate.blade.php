@@ -48,7 +48,7 @@ Solicitud de certificado
         <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
             <div class="u-container-layout u-valign-middle u-container-layout-1">
                 <h5 class="u-text u-text-default u-text-1">
-                    Usted no figura acreditado, por favor comuníquese con nosotros al teléfono <a href="tel:24099899">2409 9899</a>, al mail <a href="mailto:secretaria@audec.edu.uy?subject=Solicitud%20de%20Certificado"  >secretaria@audec.edu.uy</a>
+                    Usted no figura acreditado, por favor comuníquese con nosotros al teléfono <a href="tel:26005620">26005620</a>, al mail <a href="mailto:secretaria@lamennais.edu.uyuy?subject=Solicitud%20de%20Certificado"  >secretaria@lamennais.edu.uyuy</a>
                 </h5>                         
             </div>
         </div>
