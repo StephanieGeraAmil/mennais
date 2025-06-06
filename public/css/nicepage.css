@@ -3302,11 +3302,11 @@ a {
     box-shadow: none;
 }
 .u-form-number input[type="range"]::-webkit-slider-runnable-track {
-    background:
+    /* background:
         linear-gradient(var(--track-active-color), var(--track-active-color)) 0 /
             var(--progress) 100% no-repeat,
         var(--track-color);
-}
+} */
 .u-form-number input[type="range"]::-moz-range-thumb {
     width: var(--thumb-size);
     height: var(--thumb-size);
@@ -3326,10 +3326,10 @@ a {
     box-shadow: none;
 }
 .u-form-number input[type="range"]::-moz-range-track {
-    background:
+    /* background:
         linear-gradient(var(--track-active-color), var(--track-active-color)) 0 /
             var(--progress) 100% no-repeat,
-        var(--track-color);
+        var(--track-color); */
 }
 .u-form.u-carousel form {
     width: 100%;
@@ -25624,11 +25624,11 @@ span.product-remove:after {
         var(--days-border-radius)
     );
     background-color: var(--days-color);
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         var(--days-gradient-direction),
         var(--days-gradient-first-color),
         var(--days-gradient-second-color)
-    );
+    ); */
     -webkit-text-decoration: var(--days-text-decoration);
     text-decoration: var(--days-text-decoration);
     font-family: var(--days-font-family);
@@ -25641,11 +25641,11 @@ span.product-remove:after {
 }
 .u-calendar .qs-num {
     background-color: var(--num-color);
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         var(--num-gradient-direction),
         var(--num-gradient-first-color),
         var(--num-gradient-second-color)
-    );
+    ); */
     -webkit-text-decoration: var(--num-text-decoration);
     text-decoration: var(--num-text-decoration);
     font-family: var(--num-font-family);
@@ -25700,11 +25700,11 @@ span.product-remove:after {
 }
 .u-calendar .qs-controls {
     background-color: var(--year-month-bg-color);
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         var(--year-month-gradient-direction),
         var(--year-month-gradient-first-color),
         var(--year-month-gradient-second-color)
-    );
+    ); */
     padding-top: var(--year-month-padding-vertical);
     padding-bottom: var(--year-month-padding-vertical);
     padding-left: var(--year-month-padding-horizontal);

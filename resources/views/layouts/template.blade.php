@@ -11,7 +11,7 @@
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
     @yield('styles')
 </head>
-<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background: linear-gradient(#ddd6f3, #fcd1cf)">
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" >
     @yield('content')
     @yield('scripts')
 </body>
