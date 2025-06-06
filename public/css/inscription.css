@@ -352,18 +352,19 @@
 .body-insc {
     width: 100% !important;
     background-color: #14529b !important;
-    width: 60%;
-    margin: 0 auto;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: colummn;
     justify-content: center;
+    gap: 20px;
 }
 .form-section {
-    background-color: red !important;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
 }
 .button-save {
     background-color: #0a345e !important;
@@ -373,4 +374,14 @@
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+}
+.logo {
+    height: 5%;
+    width: 80%;
+}
+.logo_img {
+    width: 100px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
 }

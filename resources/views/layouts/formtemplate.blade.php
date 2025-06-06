@@ -63,7 +63,7 @@
                                 </div>
                             </div> --}}
                             <div class="logo">
-                                       <img src="/images/logo.png" alt="Logo" class="u-image u-logo-image u-logo-image-1">
+                                       <img src="/images/logo.png" alt="Logo" class="logo_img">
                                     </div>
                             <div class="">
                                 <div class="">
