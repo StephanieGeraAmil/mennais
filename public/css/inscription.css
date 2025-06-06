@@ -351,16 +351,17 @@
 
 .body-insc {
     width: 100% !important;
+    height: 100% !important;
     background-color: #14529b !important;
 
     display: flex;
     flex-direction: colummn;
-    justify-content: center;
+
     gap: 20px;
 }
 .form-section {
     width: 80%;
-    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -382,12 +383,10 @@
     cursor: pointer;
     border-radius: 5px;
 }
-.logo {
-    width: 100%;
-}
+
 .logo_img {
+    width: 100%;
     height: auto;
-    width: auto;
     margin: 20px auto;
     display: block;
 }
