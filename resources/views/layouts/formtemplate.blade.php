@@ -39,14 +39,14 @@
         </div>
       </div>
     </header> --}}
-    <section class="u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-xl u-gradient u-section-1 body-insc" id="sec-3ffd">
-    <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-            <div class="u-gutter-0 u-layout">
-                <div class="u-layout-col">
+    <section class=" body-insc" id="sec-3ffd">
+    <div class="">
+        <div class="">
+            <div class="">
+                <div class="">
                     @yield('notifications')              
                     <div class="u-size-30">
-                        <div class="u-layout-row">
+                        <div class="">
                             {{-- <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2">
                                 <div class="u-container-layout u-container-layout-2">
                                     <h4 class="u-text u-text-2">@yield('subtitle')</h4>
@@ -59,12 +59,12 @@
                                     @yield('left-form')
                                 </div>
                             </div> --}}
-                            <div class="u-form u-form-1 logo">
+                            <div class="logo">
                                        <img src="/images/logo.png" alt="Logo" class="u-image u-logo-image u-logo-image-1">
                                     </div>
-                            <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-3">
-                                <div class="u-container-layout u-container-layout-4">
-                                    <div class="u-form u-form-1 form-section">
+                            <div class="">
+                                <div class="">
+                                    <div class="">
                                         @yield('form')
                                     </div>
                                 </div>
