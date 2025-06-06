@@ -3,12 +3,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Proeducar
+    <meta name="keywords" content="Congreso pedagógico
     Educación
     Uruguay
     Congreso
     transformación Educativa">
-    <meta name="description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
+    <meta name="description" content="Congreso pedagógico La Mennais">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
     <link rel="stylesheet" href="/css/inscripcion.css" media="screen">
@@ -26,7 +26,7 @@
 }</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="Inscripción Indivudual">
-    <meta property="og:description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
+    <meta property="og:description" content="Congreso pedagógico La Mennais">
     <meta property="og:type" content="website">
 </head>
 <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es">

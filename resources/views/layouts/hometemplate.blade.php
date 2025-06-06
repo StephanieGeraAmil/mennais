@@ -130,7 +130,7 @@ EDUCACION EMOCIONAL- Desarollando competencias para el siglo XXI EDUCAR">
                       <p class="u-text u-text-palette-1-dark-3 u-text-2">Incluye la Jornada PRESENCIAL + Sesión VIRTUAL<br>
                         <br>$ 1.300 hasta el 31/12, luego $1.500<br>Venta exclusiva por Tickantel
                       </p>
-                      <a href="https://tickantel.com.uy/inicio/espectaculo/40017820/espectaculo/Proeducar%202025?3" class="u-active-palette-1-light-2 u-align-center u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-light-2 u-border-palette-1-light-2 u-btn u-button-style u-hover-palette-1-light-2 u-palette-1-dark-1 u-btn-1" target="_blank">Tickantel </a>
+                      <a href="https://tickantel.com.uy/inicio/espectaculo/40017820/espectaculo/Congreso pedagógico%202025?3" class="u-active-palette-1-light-2 u-align-center u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-light-2 u-border-palette-1-light-2 u-btn u-button-style u-hover-palette-1-light-2 u-palette-1-dark-1 u-btn-1" target="_blank">Tickantel </a>
                     </div>
                   </div>
                 </div>
@@ -490,7 +490,7 @@ Doctoranda, con una Maestría en Tecnología Educativa, Licenciatura en Ciencias
               <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-white u-icon-1"><img src="images/1687031.png" alt=""></span>
                   <h3 class="u-custom-font u-font-raleway u-text u-text-default u-text-palette-1-dark-3 u-text-1">CONTACTO</h3>
-                  <p class="u-text u-text-default u-text-palette-1-dark-2 u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;<a href="tel:+59898000243" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1">098 000 243</a>, al mail <a href="mailto:secretaria@lamennais.edu.uyuy?subject=Contacto%20Proeducar" class="u-active-none u-border-grey-75 u-border-none u-btn u-button-link u-button-style u-hover-none u-text-body-color u-btn-2">secretaria@lamennais.edu.uyuy</a> o complete el siguiente formulario:
+                  <p class="u-text u-text-default u-text-palette-1-dark-2 u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;<a href="tel:+59898000243" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1">098 000 243</a>, al mail <a href="mailto:secretaria@lamennais.edu.uyuy?subject=Contacto%20Congreso pedagógico" class="u-active-none u-border-grey-75 u-border-none u-btn u-button-link u-button-style u-hover-none u-text-body-color u-btn-2">secretaria@lamennais.edu.uyuy</a> o complete el siguiente formulario:
                   </p>
                   {{-- <div class="u-form u-form-1">
                     <form action="./scripts/form-7b8f-8ec3.php" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;" source="customphp" name="form">

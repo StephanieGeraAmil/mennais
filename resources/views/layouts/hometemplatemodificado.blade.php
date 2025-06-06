@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Proeducar
+    <meta name="keywords" content="Congreso pedagógico
 Educación
 Uruguay
 Congreso
@@ -838,7 +838,7 @@ transformación Educativa">
                   </div> --}}
                                 {{-- <div class="u-container-layout u-valign-bottom u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-dark-3 u-white u-icon-1"><img src="images/1034204-6aa7c0f0.png" alt=""></span>
                     <h3 class="u-custom-font u-font-raleway u-text u-text-default u-text-palette-1-dark-3 u-text-1">CONTACTO</h3>
-                    <p class="u-text u-text-custom-color-21 u-text-default u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;<a href="tel:26005620" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1">26005620</a>, al mail <a href="mailto:stephanie036@gmail.com?subject=Contacto%20Proeducar" class="u-active-none u-border-grey-75 u-border-none u-btn u-button-link u-button-style u-hover-none u-text-body-color u-btn-2">secretaria@lamennais.edu.uyuy</a> o complete el siguiente formulario:
+                    <p class="u-text u-text-custom-color-21 u-text-default u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;<a href="tel:26005620" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1">26005620</a>, al mail <a href="mailto:stephanie036@gmail.com?subject=Contacto%20Congreso pedagógico" class="u-active-none u-border-grey-75 u-border-none u-btn u-button-link u-button-style u-hover-none u-text-body-color u-btn-2">secretaria@lamennais.edu.uyuy</a> o complete el siguiente formulario:
                     </p> --}}
                                 <div class="u-clearfix u-custom-html u-custom-html-1">@yield('contact_form')</div>
                                 {{-- </div> --}}

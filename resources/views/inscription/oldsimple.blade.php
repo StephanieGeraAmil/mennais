@@ -2,7 +2,7 @@
 <html style="font-size: 16px;" lang="es-UY"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Proeducar
+    <meta name="keywords" content="Congreso pedagógico
 Educación
 Uruguay
 Congreso
@@ -34,7 +34,7 @@ transformación Educativa">
     <header class="u-clearfix u-container-align-left-xl u-header u-palette-1-dark-1 u-sticky u-sticky-387b" id="sec-055d" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-xl u-valign-middle-xs u-sheet-1">
         <div class="u-clearfix u-container-align-left u-group-elements u-valign-middle u-group-elements-1">
           <h5 class="u-align-left u-custom-font u-font-raleway u-text u-text-default u-text-1" data-lang-es="<a class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-3 u-block-control&quot; data-href=&quot;https://nicepage.com&quot; style=&quot;background-image: none; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;552&quot; data-lang-es=&quot;{&amp;quot;content&amp;quot;:&amp;quot;CONGRESO PEDAGOGICO LA MENNAIS&amp;quot;}&quot;>CONGRESO PEDAGOGICO LA MENNAIS</a>">
-            <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-1" data-href="#" data-lang-es="{&quot;content&quot;:&quot;PROEDUCAR XXXII&quot;}">CONGRESO PEDAGOGICO LA MENNAIS</a>
+            <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-1" data-href="#" data-lang-es="{&quot;content&quot;:&quot;Congreso pedagógico XXXII&quot;}">CONGRESO PEDAGOGICO LA MENNAIS</a>
           </h5>
           <h5 class="u-align-left u-text u-text-default u-text-palette-1-light-2 u-text-2" data-lang-es="Sample Headline">EDUCACION EMOCIONAL- Desarollando competencias para el siglo XXI EDUCAR</h5>
         </div>
