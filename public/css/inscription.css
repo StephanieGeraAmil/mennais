@@ -251,10 +251,6 @@
     .u-section-1 .u-form-1 {
         width: 300px;
     }
-
-    .body-insc .form-section {
-        width: 100%;
-    }
 }
 
 @media (max-width: 767px) {
@@ -306,6 +302,10 @@
         height: 690px;
         width: 520px;
         margin-bottom: -16px;
+    }
+
+    .body-insc .form-section {
+        width: 100%;
     }
 }
 
