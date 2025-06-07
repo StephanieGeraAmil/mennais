@@ -46,8 +46,8 @@
 
       
                     @yield('notifications')              
-                    <div class="u-size-30">
-                        <div class="actual-content">
+                
+                     <div class="actual-content">
                             {{-- <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2">
                                 <div class="u-container-layout u-container-layout-2">
                                     <h4 class="u-text u-text-2">@yield('subtitle')</h4>
@@ -70,8 +70,8 @@
                           
                       
        
-                        </div>
-                  </div>
+                     </div>
+             
 </section>
 {{-- <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
     background-color: #14529B !important
