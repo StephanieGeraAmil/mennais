@@ -20,7 +20,7 @@
     
     @yield('custom_css')
     @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/inscription.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/inscription.css') }}?v={{ filemtime(public_path('css/inscription.css')) }}">
 @endpush
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
