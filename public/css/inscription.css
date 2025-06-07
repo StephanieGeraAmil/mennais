@@ -403,8 +403,7 @@
 }
 
 .logo_img {
-    width: 100% !important;
-    min-width: 500px;
+    min-width: 600px;
     height: 100px !important;
     object-fit: cover;
     display: block;
