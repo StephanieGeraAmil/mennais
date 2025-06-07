@@ -409,3 +409,63 @@
     object-fit: cover;
     display: block;
 }
+
+@media (min-width: 800px) {
+    .body-insc {
+        width: 100% !important;
+        height: 100% !important;
+        background-color: #14529b !important;
+    }
+    .centered_section {
+        width: 80% !important;
+        background-color: #14529b !important;
+        display: flex;
+        flex-direction: colummn;
+
+        gap: 20px;
+    }
+    .form-section {
+        width: 70%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+    }
+    .actual-content {
+        width: 100%;
+    }
+
+    .logo_section {
+        width: 100% !important;
+        min-height: 100px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-section {
+        margin-top: 25px;
+        width: 100%;
+        height: 30px !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between !important;
+        align-items: center;
+    }
+    .button-save {
+        background-color: #0a345e !important;
+        color: white;
+        border: 2px solid #ffc107;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .logo_img {
+        width: 600px !important;
+        height: 100px !important;
+        object-fit: cover;
+        display: block;
+    }
+}
