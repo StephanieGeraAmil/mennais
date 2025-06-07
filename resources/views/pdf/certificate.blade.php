@@ -25,9 +25,14 @@
         {{$name}}, C.I.: {{$document}} 
     </div>
     
-    <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
+    {{-- <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
         Ha participado de {{env('EVENT_NAME')}}, <BR/>
         organizado por La Mennais, el día {!! $attendance_text !!}
+  
+    </div> --}}
+        <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
+        Ha participado de {{env('EVENT_NAME')}} <BR/>
+        organizado por La Mennais, el día 2 de agosto del 2025
   
     </div>
 </body>
