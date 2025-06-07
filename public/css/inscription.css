@@ -355,7 +355,7 @@
 }
 .centered_section {
     width: 80% !important;
-
+    background-color: #14529b !important;
     display: flex;
     flex-direction: colummn;
 
