@@ -348,11 +348,13 @@
 .full_width {
     width: 100% !important;
 }
-
 .body-insc {
     width: 100% !important;
     height: 100% !important;
     background-color: #14529b !important;
+}
+.centered_section {
+    width: 80% !important;
 
     display: flex;
     flex-direction: colummn;

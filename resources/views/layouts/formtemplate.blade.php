@@ -42,7 +42,7 @@
         </div>
       </div>
     </header> --}}
-    <section class="body-insc" id="sec-3ffd">
+    <section class="form-section" id="sec-3ffd">
     <div class="">
         <div class="">
             <div class="">
