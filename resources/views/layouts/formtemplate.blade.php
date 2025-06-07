@@ -60,20 +60,18 @@
                                     @yield('left-form')
                                 </div>
                             </div> --}}
-                        
+                        <div class="logo-section">
                                        <img src="/images/logo.png" alt="Logo" class="logo_img">
-                                   
-                            <div class="">
-                                <div class="">
-                                    <div class="">
+                                   </div>
+                        
+                               
                                         @yield('form')
-                                    </div>
-                                </div>
-                            </div>
+                                
+                          
                       
        
-        </div>
-    </div>
+                        </div>
+                  </div>
 </section>
 {{-- <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
     background-color: #14529B !important
