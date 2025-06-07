@@ -73,7 +73,7 @@
                      </div>
              
 </section>
-<style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
+<style class="u-overlap-style">body {
     background-color: #14529B !important
 }</style>
 
