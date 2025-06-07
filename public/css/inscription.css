@@ -402,6 +402,6 @@
 
 .logo_img {
     width: 100%;
-    height: auto;
+    min-height: 70px;
     object-fit: cover;
 }
