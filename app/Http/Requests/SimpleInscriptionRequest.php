@@ -33,6 +33,22 @@ class SimpleInscriptionRequest extends FormRequest
             'type' =>  new Enum(InscriptionTypeEnum::class)
         ];
     }
+    public function messages()
+{
+    return [
+        'name.required' => 'El campo nombre es obligatorio.',
+        'document.required' => 'El campo documento es obligatorio.',
+        'email.required' => 'El campo correo electrónico es obligatorio.',
+        'email.email' => 'El formato del correo electrónico no es válido.',
+        'city.required' => 'El campo ciudad es obligatorio.',
+        'city.string' => 'La ciudad debe ser una cadena de texto.',
+        'institution_name.required' => 'El campo institución es obligatorio.',
+        'institution_name.string' => 'El nombre de la institución debe ser una cadena de texto.',
+        'payment_file.file' => 'El archivo de pago debe ser un archivo válido.',
+        'amount.numeric' => 'El monto debe ser un número.',
+        // Add others as needed
+    ];
+}
     
     public function prepareForValidation()
     {
