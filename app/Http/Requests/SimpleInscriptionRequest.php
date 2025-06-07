@@ -46,7 +46,8 @@ class SimpleInscriptionRequest extends FormRequest
         'institution_name.string' => 'El nombre de la institución debe ser una cadena de texto.',
         'payment_file.file' => 'El archivo de pago debe ser un archivo válido.',
         'amount.numeric' => 'El monto debe ser un número.',
-        // Add others as needed
+          'institution_type.required' => 'El campo tipo de institución es obligatorio.',
+        'institution_type.string' => 'El tipo de la institución debe ser una cadena de texto.',
     ];
 }
     
