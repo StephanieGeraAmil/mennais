@@ -390,6 +390,12 @@
     flex-direction: column;
     align-items: center;
 }
+.button-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .button-save {
     background-color: #0a345e !important;
     color: white;

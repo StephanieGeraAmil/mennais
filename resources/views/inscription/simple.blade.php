@@ -205,7 +205,7 @@
                 <div style="width: 100%;text-align: center;"><small>Adjunte el comprobante de pago (pdf o jpg)</small></div>
             </div>
         </div>
-        <div class="button_section">
+        <div class="button-section">
          {{-- <div class="u-align-right u-form-group u-form-submit"> --}}
                 <a href="https://lamennais.edu.uy/cp25" 
                 class="button-save">Volver</a>
