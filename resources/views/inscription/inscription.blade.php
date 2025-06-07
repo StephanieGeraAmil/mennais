@@ -1,7 +1,7 @@
 @extends('layouts.formtemplate')
-    @push('styles')
+    {{-- @push('styles')
     <link rel="stylesheet" href="{{ asset('css/inscription.css') }}?v={{ filemtime(public_path('css/inscription.css')) }}">
-@endpush
+@endpush --}}
 @section('title')
     Inscripción Indivudual
 @endsection
