@@ -43,13 +43,11 @@
       </div>
     </header> --}}
     <section class="form-section" id="sec-3ffd">
-    <div class="">
-        <div class="">
-            <div class="">
-                <div class="">
+
+      
                     @yield('notifications')              
                     <div class="u-size-30">
-                        <div class="">
+                        <div class="actual-content">
                             {{-- <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2">
                                 <div class="u-container-layout u-container-layout-2">
                                     <h4 class="u-text u-text-2">@yield('subtitle')</h4>
@@ -62,9 +60,9 @@
                                     @yield('left-form')
                                 </div>
                             </div> --}}
-                            <div class="logo">
+                        
                                        <img src="/images/logo.png" alt="Logo" class="logo_img">
-                                    </div>
+                                   
                             <div class="">
                                 <div class="">
                                     <div class="">
@@ -72,10 +70,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                      
+       
         </div>
     </div>
 </section>
