@@ -99,30 +99,7 @@
     <form action="/store_inscription" method="POST" class=""
         source="custom" name="Inscripción Individual" style="padding: 18px 0px;" enctype="multipart/form-data">
         @csrf
-        {{-- <div class="u-form-group u-form-name">
-    <label for="name-05a8" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Nombre Completo" id="name-05a8" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-1" required="" value="{{old('name')}}">
-  </div>
-  <div class="u-form-email u-form-group">
-    <label for="email-05a8" class="u-form-control-hidden u-label"></label>
-    <input type="email" placeholder="email" id="email-05a8" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-4" required=""  value="{{old('email')}}">
-  </div>
-  <div class="u-form-group u-form-name u-form-group-3">
-    <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Cédula de Identidad, sin puntos ni guiones (12345678)" id="name-b2b6" name="document" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-3" onblur="clean_document(this)" required="" value="{{old('document')}}">
-  </div>
-  <div class="u-form-group u-form-group-6">
-    <label for="text-59c6" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Institución" id="text-59c6" name="extra[centro_educativo]" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-6"  value="{{old('extra.centro_educativo')}}">    
-  </div> 
-  <div class="u-form-group u-form-group-11">
-    <label for="text-c55e" class="u-form-control-hidden u-label"></label>
-    <select id="place" name="extra[place]" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
-      <option value="">Origen</option>
-      <option value="montevideo" {{(old('extra.place') =="montevideo")?"Selected":""}}>Montevideo</option>
-      <option value="interior" {{(old('extra.place') =="interior")?"Selected":""}}>Interior</option>
-    </select>
-  </div>--}}
+     
   {{-- <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
     <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
@@ -169,9 +146,9 @@
                 class="u-input u-input-rectangle u-radius-14 u-input-6">
         </div> --}}
         <div class="u-form-group u-form-select u-form-group-7">
-            <label for="select-c14a" class="u-label">Nivel</label>
             <div class="u-form-select-wrapper">
                 <select id="select-c14a" name="institution_type" class="u-input u-input-rectangle u-radius-14">
+                      <option value="">Nivel</option>
                     <option value="Educación Inicial" data-calc="">Educación Inicial</option>
                     <option value="Primaria" data-calc="">Primaria</option>
                     <option value="Secundaria" data-calc="">Secundaria</option>
@@ -192,11 +169,7 @@
         </div> --}}
         <div id="payment_div" class="full_width">
 
-            {{-- <div class="u-form-group u-form-group-9">
-                <label for="text-1207" class="u-form-control-hidden u-label"></label>
-                <input type="text" placeholder="Monto depositado" id="text-1207" name="amount"
-                class="u-input u-input-rectangle u-radius-14 u-input-9">
-            </div> --}}
+        
             <div class="u-form-group u-form-group-11 space_above">
                 <label for="text-c55e" class="u-form-control-hidden u-label"></label>
                 <input type="file" placeholder="Adjunte un comprobante de pago" id="payment_file-4c18"
