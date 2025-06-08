@@ -85,51 +85,14 @@
                     _token: token,
                     document: document
                 },
-                success: function (response) {
-              
-
-                // const messageDiv = `
-                //     <div  
-                //     style="
-                //         background-color:#2cccc4;
-                    
-                //         padding: 10px 15px;
-                //         border-radius: 8px;
-                //         font-weight: bold;
-                //                margin-top:40px;
-                //     "
-                   
-                //     >
-                //         ${response.message}
-                //     </div>
-                // `;
-
-                // // $('#responseMessage').hide().html(messageDiv).fadeIn();
-                // $('#responseMessage').html(messageDiv);
-    //    $('#success_div').show();
-       $('#success_div').css('display', 'flex');
-       document.getElementById("success_div").style.removeProperty("display");
+        success: function (response) {
+                $('#fail_div').hide();
+                $('#success_div').fadeIn().delay(5000).fadeOut();
+                $('#certificateForm')[0].reset();
             },
             error: function () {
-                // const errorDiv = `
-                //     <div 
-                //     style="
-                //         padding: 10px 15px;
-                //         border-radius: 8px;
-                //         font-weight: bold;
-                //         margin-top:40px;
-                //         "
-              
-                //     >
-                //         Hubo un error al procesar la solicitud.
-                //     </div>
-                // `;
-                // // $('#responseMessage').hide().html(errorDiv).fadeIn();
-                // $('#responseMessage').html(errorDiv);
-                
-            //    $('#fail_div').show();
-               $('#fail_div').css('display', 'flex');
-               document.getElementById("fail_div").style.removeProperty("display");
+                $('#success_div').hide();
+                $('#fail_div').fadeIn().delay(5000).fadeOut();
             }
         });
     });
