@@ -108,11 +108,8 @@
                 class="button-save">Volver</a>
         {{-- </div> --}}
             {{-- <div class="u-align-right u-form-group u-form-submit button-save"> --}}
-               <div class="u-align-right u-form-group u-form-submit">
-                            <a href="#" class="button-save" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Enviar<br>
-                            </a>
-                            <input type="submit" value="submit" class="u-form-control-hidden">
-                          </div>
+    <button type="submit" class="button-save">Enviar</button>
+                
         {{-- </div> --}}
         </div>
     </form>
