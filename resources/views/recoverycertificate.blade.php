@@ -106,8 +106,8 @@
 
                 // // $('#responseMessage').hide().html(messageDiv).fadeIn();
                 // $('#responseMessage').html(messageDiv);
-       $('#success_div').show();
-       $('#success_div').removeAttr('hidden').css('display', 'block');
+    //    $('#success_div').show();
+       $('#success_div').css('display', 'block');
             },
             error: function () {
                 // const errorDiv = `
@@ -126,8 +126,8 @@
                 // // $('#responseMessage').hide().html(errorDiv).fadeIn();
                 // $('#responseMessage').html(errorDiv);
                 
-               $('#fail_div').show();
-               $('#fail_div').removeAttr('hidden').css('display', 'block');
+            //    $('#fail_div').show();
+               $('#fail_div').css('display', 'block');
             }
         });
     });
