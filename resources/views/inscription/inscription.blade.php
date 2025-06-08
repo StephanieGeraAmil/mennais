@@ -47,14 +47,7 @@
         source="custom" name="Inscripción Individual" style="padding: 18px auto;" enctype="multipart/form-data">
         @csrf
      
-  {{-- <div class="u-form-group u-form-group-11">
-    <label for="text-c55e" class="u-form-control-hidden u-label"></label>
-    <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
-        <option value="">Modalidad</option>
-        <option value="virtual" {{(old('type') =="virtual")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::REMOTO->text()}}</option>
-        <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option>
-    </select>
-</div>  --}}
+
 <input type="hidden" name="type" value="hibrido">
 {{-- <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" onchange="togglePaymentDiv()"> --}}
         <div class="u-form-group u-form-name">
@@ -62,11 +55,7 @@
             <input type="text" placeholder="Nombre Completo" id="name-05a8" name="name"
                 class="u-input u-input-rectangle u-radius-14 u-input-1" required="">
         </div>
-        {{-- <div class="u-form-group u-form-group-2">
-            <label for="text-8cb6" class="u-form-control-hidden u-label"></label>
-            <input type="text" placeholder="Apellido" id="text-8cb6" name="lastname"
-                class="u-input u-input-rectangle u-radius-14 u-input-2">
-        </div> --}}
+    
         <div class="u-form-group u-form-name u-form-group-3">
             <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Cédula de Identidad (1234567-8)" id="name-b2b6" name="document"
@@ -77,21 +66,13 @@
             <input type="email" placeholder="email" id="email-05a8" name="email"
                 class="u-input u-input-rectangle u-radius-14 u-input-4" required="">
         </div>
-        {{-- <div class="u-form-group u-form-phone u-form-group-5">
-            <label for="phone-bfdf" class="u-form-control-hidden u-label"></label>
-            <input type="tel" placeholder="Teléfono" id="phone-bfdf" name="phone"
-                class="u-input u-input-rectangle u-radius-14 u-input-5" required="">
-        </div> --}}
+     
         <div class="u-form-group u-form-group-6">
             <label for="text-59c6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Institución" id="text-59c6" name="institution_name"
                 class="u-input u-input-rectangle u-radius-14 u-input-6">
         </div>
-                {{-- <div class="u-form-group u-form-group-6">
-            <label for="text-59c6" class="u-form-control-hidden u-label"></label>
-            <input type="text" placeholder="Ciudad" id="text-59c6" name="city"
-                class="u-input u-input-rectangle u-radius-14 u-input-6">
-        </div> --}}
+                
         <div class="u-form-group u-form-select u-form-group-7">
             <div class="u-form-select-wrapper">
                 <select id="select-c14a" name="institution_type" class="u-input u-input-rectangle u-radius-14">
@@ -109,11 +90,7 @@
                 </svg>
             </div>
         </div>
-        {{-- <div class="u-form-group u-form-group-8">
-            <label for="text-8b97" class="u-form-control-hidden u-label"></label>
-            <input type="text" placeholder="Ciudad" id="text-8b97" name="city"
-                class="u-input u-input-rectangle u-radius-14 u-input-8">
-        </div> --}}
+       
         <div id="payment_div" class="full_width">
 
         
@@ -131,8 +108,11 @@
                 class="button-save">Volver</a>
         {{-- </div> --}}
             {{-- <div class="u-align-right u-form-group u-form-submit button-save"> --}}
-                <a onclick="$(this).closest('form').submit()"
-                class="button-save">Enviar</a>
+               <div class="u-align-right u-form-group u-form-submit">
+                            <a href="#" class="button-save" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Enviar<br>
+                            </a>
+                            <input type="submit" value="submit" class="u-form-control-hidden">
+                          </div>
         {{-- </div> --}}
         </div>
     </form>
