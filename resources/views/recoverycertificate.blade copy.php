@@ -1,5 +1,7 @@
 @extends('layouts.formtemplate')
-
+@section('title')
+Solicitud de certificado
+@endsection
 @section('notifications')
 @isset($errors)                                        
 @error('document')                        
