@@ -1,46 +1,6 @@
 @extends('layouts.formtemplate')
 @section('notifications')
-    @if (Session::has('msg'))
-        <div class="u-size-30">
-            <div class="u-layout-col">
-                <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
-                    <div class="u-container-layout u-valign-middle u-container-layout-1" style="background-color:#2cccc4">
-                        <h5 class="u-text u-text-default u-text-1">{!! Session::get('msg') !!}</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    @endif
-    @if ($errors->any())
-        <div class="u-size-30">
-            <div class="u-layout-col">
-                <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
-                    <div class="u-container-layout u-valign-middle u-container-layout-1">
-                        <h5 class="u-text u-text-default u-text-1">
-                        
-                            @if ($errors->any())
-    <div class="u-size-30">
-        <div class="u-layout-col">
-            <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
-                <div class="u-container-layout u-valign-middle u-container-layout-1">
-                    <h5 class="u-text u-text-default u-text-1">
-                        {{-- Display specific error messages --}}
-                        @foreach ($errors->all() as $error)
-                            <div>{{ $error }}</div>
-                        @endforeach
-                    </h5>
-                </div>
-            </div>
-        </div>
-    </div>
-@endif
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    @endif
-@endsection
+   
 {{-- @section('notifications')
 @isset($errors)                                        
 @error('document')                        
@@ -95,8 +55,9 @@
 </div>                    
 @endisset
 @endsection --}}
+<div id="responseMessage" class="u-align-center u-container-style u-palette-2-base u-size-60 u-layout-cell-1" style="margin-top: 1rem;"></div>
 
-
+@endsection 
 @section('form')
 <div style="display:flex; flex-direction: column; align-content:center; height:70%;">
 <p class="u-text u-text-3">Ingrese su documento y le enviaremos a su mail un link donde podrá descargar el certificado.</p>
@@ -142,24 +103,40 @@
                     _token: token,
                     document: document
                 },
-                success: function (response) {
-                    // Assuming you're returning the same view with a 'success' or 'fail' key
-                    let message = '';
-                    if (response.success) {
-                        message = '<span style="color: green;">El enlace ha sido enviado a su correo.</span>';
-                    } else if (response.fail) {
-                        message = '<span style="color: red;">No se encontró el usuario o asistencia inválida.</span>';
-                    } else if (response.wrong_document) {
-                        message = '<span style="color: red;">Documento inválido.</span>';
-                    }
-                    $('#responseMessage').html(message);
-                },
-                error: function (xhr) {
-                    $('#responseMessage').html('<span style="color: red;">Hubo un error al procesar la solicitud.</span>');
-                }
-            });
+                ssuccess: function (response) {
+              
+
+                const messageDiv = `
+                    <div style="
+                        background-color:#2cccc4;
+                        color: white;
+                        padding: 10px 15px;
+                        border-radius: 8px;
+                        font-weight: bold;
+                    ">
+                        ${response.message}
+                    </div>
+                `;
+
+                $('#responseMessage').hide().html(messageDiv).fadeIn();
+            },
+            error: function () {
+                const errorDiv = `
+                    <div style="
+                        background-color: #e74c3c;
+                        color: white;
+                        padding: 10px 15px;
+                        border-radius: 8px;
+                        font-weight: bold;
+                    ">
+                        Hubo un error al procesar la solicitud.
+                    </div>
+                `;
+                $('#responseMessage').hide().html(errorDiv).fadeIn();
+            }
         });
     });
+});
 </script>    
 @endsection 
 
