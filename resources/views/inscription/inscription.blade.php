@@ -31,7 +31,7 @@ transformación Educativa">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es"><header class="u-clearfix u-container-align-center u-custom-color-26 u-header u-sticky u-sticky-387b u-header" id="sec-055d"><div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-align-center u-image u-image-default u-image-1" src="images/logo.png" alt="" data-image-width="1024" data-image-height="119" data-lang-es="">
+        <img class="u-align-center u-image u-image-default u-image-1" src="images/logo.png" alt="" data-image-width="1024" data-image-height="117" data-lang-es="">
       </div></header>
     <section class="u-clearfix u-section-1" id="sec-3ffd">
       <div class="u-clearfix u-sheet u-sheet-1">
@@ -57,9 +57,9 @@ transformación Educativa">
                           <p class="u-text u-text-3">Por favor, complete y envíe el formulario con sus datos</p>
                         </div>
                       </div>
-                      <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1">@yield('left-text')</div>
+                      {{-- <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1">@yield('left-text')</div>
                       <a href="#" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-white u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Button</a>
-                    </div>
+                    </div> --}}
                   </div>
                   <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-3">
                     <div class="u-container-layout u-container-layout-4">
@@ -146,7 +146,7 @@ transformación Educativa">
                 <input type="file" placeholder="Adjunte un comprobante de pago" id="payment_file-4c18"
                 name="payment_file" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10"
                 >
-                <div style="width: 100%;text-align: center;"><small>Adjunte el comprobante de pago (pdf o jpg)</small></div>
+
             </div>
         </div>
         <div class="button-section">
