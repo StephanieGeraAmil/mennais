@@ -107,7 +107,7 @@
                 // // $('#responseMessage').hide().html(messageDiv).fadeIn();
                 // $('#responseMessage').html(messageDiv);
     //    $('#success_div').show();
-       $('#success_div').css('display', 'block');
+       $('#success_div').css('display', 'flex');
             },
             error: function () {
                 // const errorDiv = `
@@ -127,7 +127,7 @@
                 // $('#responseMessage').html(errorDiv);
                 
             //    $('#fail_div').show();
-               $('#fail_div').css('display', 'block');
+               $('#fail_div').css('display', 'flex');
             }
         });
     });
