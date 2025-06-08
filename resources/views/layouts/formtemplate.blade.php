@@ -83,5 +83,5 @@ background-color: #0a345e !important
           </a>
         </p>
       </div></footer>
-  
+        @yield('custom_script')
 </body></html>
