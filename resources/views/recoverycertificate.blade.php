@@ -108,6 +108,7 @@
                 // $('#responseMessage').html(messageDiv);
     //    $('#success_div').show();
        $('#success_div').css('display', 'flex');
+       document.getElementById("success_div").style.removeProperty("display");
             },
             error: function () {
                 // const errorDiv = `
@@ -128,6 +129,7 @@
                 
             //    $('#fail_div').show();
                $('#fail_div').css('display', 'flex');
+               document.getElementById("fail_div").style.removeProperty("display");
             }
         });
     });
