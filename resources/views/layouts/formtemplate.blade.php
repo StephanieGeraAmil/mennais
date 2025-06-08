@@ -118,16 +118,21 @@ background-color: #0a345e !important
                     document: document
                 },
         success: function (response) {
-            console.log("Success response:", response);
-                $('#fail_div').hide();
-                $('#success_div').fadeIn().delay(5000).fadeOut();
-                $('#certificateForm')[0].reset();
+             if (response.fail) {
+        $('#success_div').hide();
+        $('#fail_div').fadeIn().delay(5000).fadeOut();
+        return;
+    }
+
+    $('#fail_div').hide();
+    $('#success_div').fadeIn().delay(5000).fadeOut();
+    $('#certificateForm')[0].reset();
             },
-            error: function () {
-                console.error("Error response");
-                $('#success_div').hide();
-                $('#fail_div').fadeIn().delay(5000).fadeOut();
-            }
+            // error: function () {
+            //     console.error("Error response");
+            //     $('#success_div').hide();
+            //     $('#fail_div').fadeIn().delay(5000).fadeOut();
+            // }
         });
     });
 });
