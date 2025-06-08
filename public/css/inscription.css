@@ -357,7 +357,7 @@
     height: 100% !important;
     background-color: #14529b !important;
     display: flex;
-    flex-direction: column;
+    flex-direction: colummn;
 }
 .centered_section {
     width: 80% !important;
@@ -419,7 +419,7 @@
         height: 100% !important;
         background-color: #14529b !important;
         display: flex;
-        flex-direction: column;
+        flex-direction: colummn;
     }
     .centered_section {
         width: 80% !important;
