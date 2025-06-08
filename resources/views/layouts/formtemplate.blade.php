@@ -88,7 +88,7 @@ background-color: #0a345e !important
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>  
  
-    function clean_document(element){
+   function clean_document(element){
         let input = $(element);
         let input_val = input.val();
         new_input_val = input_val.replace(/\D/g, "");
@@ -100,9 +100,11 @@ background-color: #0a345e !important
     //     $('#certificateForm').on('submit', function (e) {
     $(function () {
 
+
   $('#certificateForm').submit(function (e) {
             e.preventDefault(); // Prevent normal form submission
-
+  $('#success_div').hide();
+    $('#fail_div').hide();
             const form = $(this);
             const url = form.attr('action');
             const token = $('input[name="_token"]').val();
@@ -115,23 +117,19 @@ background-color: #0a345e !important
                     _token: token,
                     document: document
                 },
-                success: function (response) {
-                    // Assuming you're returning the same view with a 'success' or 'fail' key
-                    let message = '';
-                    if (response.success) {
-                        message = '<span style="color: green;">El enlace ha sido enviado a su correo.</span>';
-                    } else if (response.fail) {
-                        message = '<span style="color: red;">No se encontró el usuario o asistencia inválida.</span>';
-                    } else if (response.wrong_document) {
-                        message = '<span style="color: red;">Documento inválido.</span>';
-                    }
-                    $('#responseMessage').html(message);
-                },
-                error: function (xhr) {
-                    $('#responseMessage').html('<span style="color: red;">Hubo un error al procesar la solicitud.</span>');
-                }
-            });
+        success: function (response) {
+            console.log("Success response:", response);
+                $('#fail_div').hide();
+                $('#success_div').fadeIn().delay(5000).fadeOut();
+                $('#certificateForm')[0].reset();
+            },
+            error: function () {
+                console.error("Error response");
+                $('#success_div').hide();
+                $('#fail_div').fadeIn().delay(5000).fadeOut();
+            }
         });
     });
+});
 </script>  
 </body></html>
