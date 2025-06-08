@@ -55,7 +55,9 @@
 </div>                    
 @endisset
 @endsection --}}
-<div id="responseMessage" class="u-align-center u-container-style u-palette-2-base u-size-60 u-layout-cell-1" style="margin-top: 1rem;"></div>
+<div id="responseMessage" class="u-align-center u-container-style u-palette-2-base u-size-60 u-layout-cell-1" style="margin-top: 1rem;padding:0;">
+{{-- <div id="responseMessage"></div> --}}
+</div>
 
 @endsection 
 @section('form')
@@ -103,7 +105,7 @@
                     _token: token,
                     document: document
                 },
-                ssuccess: function (response) {
+                success: function (response) {
               
 
                 const messageDiv = `
