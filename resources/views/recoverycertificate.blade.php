@@ -3,7 +3,7 @@
    
 
 
-<div id="success_div" class="u-size-30" >
+<div id="success_div" class="u-size-30" hidden >
     <div class="u-layout-col">
         <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
             <div class="u-container-layout u-valign-middle u-container-layout-1" style="background-color:#2cccc4">
@@ -14,7 +14,7 @@
     </div>
 </div>                        
      
-<div id="fail_div" class="u-size-30" >
+<div id="fail_div" class="u-size-30" hidden>
     <div class="u-layout-col">
         <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
             <div class="u-container-layout u-valign-middle u-container-layout-1">
@@ -59,8 +59,7 @@
     //     console.log("jQuery version:", $.fn.jquery);
     //     $('#certificateForm').on('submit', function (e) {
     $(function () {
-          $('#success_div').hide();
-    $('#fail_div').hide();
+
 
   $('#certificateForm').submit(function (e) {
             e.preventDefault(); // Prevent normal form submission
