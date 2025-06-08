@@ -112,6 +112,7 @@
 </div>
 @endsection
 @section('custom_script')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>  
     function clean_document(element){
         let input = $(element);
