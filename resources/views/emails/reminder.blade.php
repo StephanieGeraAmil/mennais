@@ -1,9 +1,9 @@
 <p>Hola {{$inscription->userData->name}},</p>
 <p>Te reenviamos la información para acceder al evento:</p>
 @if ($inscription->type === \App\Enums\InscriptionTypeEnum::HIBRIDO)
-<p>Jornada Presencial:</p>
-<p>6 de febrero 08:00 h</p>
-<p>Auditorio Nacional Adela Reta - Sodre</p>
+{{-- <p>Jornada Presencial:</p> --}}
+<p>17 de julio 8:15 h</p>
+<p>Universidad Católica del Uruguay</p>
 <p>
     <img src="{!!$message->embedData(QrCode::format('png')->generate($inscription->qrUrl()), 'QrCode.png', 'image/png')!!}">
 </p>
