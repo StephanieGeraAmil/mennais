@@ -100,7 +100,7 @@
 @section('form')
 <div style="display:flex; flex-direction: column; align-content:center; height:70%;">
 <p class="u-text u-text-3">Ingrese su documento y le enviaremos a su mail un link donde podrá descargar el certificado.</p>
-<form class="w-full max-w-sm certificate_form" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">
+<form class="w-full max-w-sm certificate_form" action="{{Route('inscription.certificateRecoveryMail')}}" id="certificateForm" method="POST">
     @csrf
     <div class="u-form-group u-form-name u-form-group-3">
             <label for="name-b2b6" class="u-form-control-hidden u-label"></label>

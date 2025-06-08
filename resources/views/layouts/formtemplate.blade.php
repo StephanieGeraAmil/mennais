@@ -60,6 +60,7 @@ transformación Educativa">
                       
     {{-- <input type="hidden" id="old_first_workshop_group_id" value={{ old('first_workshop_group_id') ?? 0 }}>
     <input type="hidden" id="old_second_workshop_group_id" value={{ old('second_workshop_group_id') ?? 0 }}> --}}
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
          @yield('form')
                       </div>
                     </div>
