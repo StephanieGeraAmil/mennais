@@ -98,7 +98,7 @@
 
                 // // $('#responseMessage').hide().html(messageDiv).fadeIn();
                 // $('#responseMessage').html(messageDiv);
-                $('#success_div').show();
+       $('#success_div').removeAttr('hidden').show();
             },
             error: function () {
                 // const errorDiv = `
@@ -116,7 +116,8 @@
                 // `;
                 // // $('#responseMessage').hide().html(errorDiv).fadeIn();
                 // $('#responseMessage').html(errorDiv);
-                 $('#fail_div').show();
+                
+               $('#fail_div').removeAttr('hidden').show();
             }
         });
     });
