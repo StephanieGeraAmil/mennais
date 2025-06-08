@@ -87,7 +87,7 @@ background-color: #0a345e !important
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>  
-    console.log("jQuery version:", $.fn.jquery);
+ 
     function clean_document(element){
         let input = $(element);
         let input_val = input.val();
@@ -99,7 +99,7 @@ background-color: #0a345e !important
     //     console.log("jQuery version:", $.fn.jquery);
     //     $('#certificateForm').on('submit', function (e) {
     $(function () {
-  console.log("Attaching submit handler...");
+
   $('#certificateForm').submit(function (e) {
             e.preventDefault(); // Prevent normal form submission
 
