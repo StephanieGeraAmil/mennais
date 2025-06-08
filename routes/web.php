@@ -65,6 +65,7 @@ Route::get('/attendance_presencial/{inscription_id}/{token}', [InscriptionContro
 
 /** Certificados */
 Route::get('/certificate', [InscriptionController::class,'certificateRecovery']);
+Route::get('/certificateRecoveryMail', [InscriptionController::class,'certificateRecoveryMail'])->name('inscription.certificateRecoveryMail');
 Route::get('/inscription/certificateRecoveryMail', [InscriptionController::class,'certificateRecovery']);
 Route::post('/inscription/certificateRecoveryMail', [InscriptionController::class,'certificateRecoveryMail'])->name('inscription.certificateRecoveryMail');
 Route::get('/certificate/{inscription}/{token}', [InscriptionController::class, 'certificate']);
