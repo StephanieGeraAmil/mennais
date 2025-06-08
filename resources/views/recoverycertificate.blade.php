@@ -121,6 +121,7 @@
     }
 
       $(document).ready(function () {
+        console.log("jQuery version:", $.fn.jquery);
         $('#certificateForm').on('submit', function (e) {
             e.preventDefault(); // Prevent normal form submission
 
