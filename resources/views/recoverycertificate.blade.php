@@ -57,11 +57,11 @@
 
 
 @section('form')
-<div style="display:flex; flex-direction: column; align-content:center;">
+<div style="display:flex; flex-direction: column; align-content:center; height:70%;">
 <p class="u-text u-text-3">Ingrese su documento y le enviaremos a su mail un link donde podrá descargar el certificado.</p>
 <form class="w-full max-w-sm certificate_form" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">
     @csrf
-    <div class="u-form-group u-form-name u-form-group-3">
+    <div class="u-form-group u-form-name u-form-group-3" style=" width:50%;">>
             <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Cédula de Identidad (1234567-8)" id="name-b2b6" name="document"
                 class="u-input u-input-rectangle u-radius-14 u-input-3" required="">
