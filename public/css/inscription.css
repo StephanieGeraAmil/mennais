@@ -378,7 +378,8 @@
 }
 
 .logo_section {
-    width: 100% !important;
+    width: 90% !important;
+    margin: 0 auto;
     min-height: 100px !important;
     display: flex;
     flex-direction: column;
@@ -404,7 +405,7 @@
 }
 
 .logo_img {
-    width: 600px !important;
+    width: 100% !important;
     height: 100px !important;
     object-fit: cover;
     display: block;
@@ -415,6 +416,8 @@
         width: 100% !important;
         height: 100% !important;
         background-color: #14529b !important;
+        diaplay: flex;
+        flex-direction: column;
     }
     .centered_section {
         width: 80% !important;
@@ -435,9 +438,9 @@
     .actual-content {
         width: 100%;
     }
-
     .logo_section {
-        width: 100% !important;
+        width: 90% !important;
+        margin: 0 auto;
         min-height: 100px !important;
         display: flex;
         flex-direction: column;
@@ -463,7 +466,7 @@
     }
 
     .logo_img {
-        width: 600px !important;
+        width: 100% !important;
         height: 100px !important;
         object-fit: cover;
         display: block;
