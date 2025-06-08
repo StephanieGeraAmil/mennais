@@ -54,13 +54,10 @@
 </div>                    
 @endisset
 @endsection
-@section('subtitle')
-Solicitud de certificado  
-@endsection
-@section('left-text-box')
-<p class="u-text u-text-3">Ingrese su documento y le enviaremos a su mail un link donde podrá descargar el certificado.</p>
-@endsection
+
+
 @section('form')
+<p class="u-text u-text-3">Ingrese su documento y le enviaremos a su mail un link donde podrá descargar el certificado.</p>
 <form class="w-full max-w-sm certificate_form" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">
     @csrf
     <div class="u-form-group u-form-name">
