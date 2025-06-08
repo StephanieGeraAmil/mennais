@@ -37,20 +37,20 @@ transformación Educativa">
         <img class="u-align-center u-image u-image-default u-image-1" src="images/logo.png" alt="" data-image-width="1024" data-image-height="117" data-lang-es="" style="margin:20px 0;">
       </div></header>
     <section class="u-clearfix u-section-1" id="sec-3ffd">
-      <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-clearfix u-sheet u-sheet-1 ">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
-            <div class="u-layout-col">
+            {{-- <div class="u-layout-col">
               <div class="u-size-30">
                 <div class="u-layout-col">
                   <div class="u-align-center u-container-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
-                    <div class="u-container-layout u-valign-middle u-container-layout-1">
+                    <div class="u-container-layout u-valign-middle u-container-layout-1"> --}}
                       {{-- <h5 class="u-text u-text-default u-text-1">Error de inscripción</h5> --}}
                          @yield('notifications')         
-                    </div>
+                    {{-- </div>
                   </div>
                 </div>
-              </div>
+              </div> --}}
            
                   <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2" style="margin:10px 0; display:flex; flex-direction:row; justify-content:center;">
                    
