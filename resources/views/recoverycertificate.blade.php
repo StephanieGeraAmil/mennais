@@ -66,7 +66,7 @@
             <input type="text" placeholder="Cédula de Identidad (1234567-8)" id="name-b2b6" name="document"
                 class="u-input u-input-rectangle u-radius-14 u-input-3" required="">
         </div>									
-       <button type="submit" class="button-save">Enviar</button>
+       <button type="submit" class="button-save" style="margin-top:20px;">Enviar</button>
 </form>
 </div>
 @endsection
