@@ -58,7 +58,9 @@
 <div id="responseMessage" class="u-align-center u-container-style u-size-60 u-layout-cell-1"  >
 {{-- <div id="responseMessage"></div> --}}
 </div>
-
+<div id="errorDiv" class="u-palette-2- u-align-center u-container-style u-size-60 u-layout-cell-1"  >
+{{-- <div id="responseMessage"></div> --}}
+</div>
 @endsection 
 @section('form')
 <div style="display:flex; flex-direction: column; align-content:center; height:70%;">
@@ -77,7 +79,7 @@
 @section('custom_script')
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>  
-    console.log("jQuery version:", $.fn.jquery);
+
     function clean_document(element){
         let input = $(element);
         let input_val = input.val();
@@ -89,7 +91,7 @@
     //     console.log("jQuery version:", $.fn.jquery);
     //     $('#certificateForm').on('submit', function (e) {
     $(function () {
-  console.log("Attaching submit handler...");
+
   $('#certificateForm').submit(function (e) {
             e.preventDefault(); // Prevent normal form submission
 
@@ -142,7 +144,7 @@
                     </div>
                 `;
                 // $('#responseMessage').hide().html(errorDiv).fadeIn();
-                $('#responseMessage').html(messageDiv);
+                $('#responseMessage').html(errorDiv);
             }
         });
     });
