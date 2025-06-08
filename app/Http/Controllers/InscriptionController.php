@@ -260,7 +260,7 @@ class InscriptionController extends Controller
         Log::debug($inscription);
         Log::debug($returned);
         if ($inscription === null || empty($returned)) {
-            return redirect('/');
+            return redirect('https://lamennais.edu.uy/cp25');
         }
         if ($inscription->type !== InscriptionTypeEnum::HIBRIDO) {
             return view('errorPresencialInscrption')->with('userData', $inscription->userData);
