@@ -14,7 +14,7 @@ transformación Educativa">
     <title>Inscripcion Indivudual</title>
     <link rel="stylesheet" href="css/nicepage.css" media="screen">
 <link rel="stylesheet" href="css/inscription.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="isf.uy">
     <link rel="icon" href="images/favicon1.png">
