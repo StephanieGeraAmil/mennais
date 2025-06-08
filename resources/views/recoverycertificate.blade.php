@@ -55,7 +55,7 @@
 </div>                    
 @endisset
 @endsection --}}
-<div id="responseMessage" >
+<div id="responseMessage" class="u-align-center u-container-style u-size-60 u-layout-cell-1"  >
 {{-- <div id="responseMessage"></div> --}}
 </div>
 
@@ -109,7 +109,7 @@
               
 
                 const messageDiv = `
-                    <div  class="u-align-center u-container-style u-size-60 u-layout-cell-1" 
+                    <div  
                     style="
                         background-color:#2cccc4;
                     
@@ -130,7 +130,6 @@
             error: function () {
                 const errorDiv = `
                     <div 
-                             class="u-align-center u-container-style u-palette-2-base u-size-60 u-layout-cell-1" 
                     style="
                         padding: 10px 15px;
                         border-radius: 8px;
