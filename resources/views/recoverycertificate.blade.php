@@ -86,11 +86,13 @@
                     document: document
                 },
         success: function (response) {
+            console.log("Success response:", response);
                 $('#fail_div').hide();
                 $('#success_div').fadeIn().delay(5000).fadeOut();
                 $('#certificateForm')[0].reset();
             },
             error: function () {
+                console.error("Error response");
                 $('#success_div').hide();
                 $('#fail_div').fadeIn().delay(5000).fadeOut();
             }
