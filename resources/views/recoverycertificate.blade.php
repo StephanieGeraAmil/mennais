@@ -1,66 +1,34 @@
 @extends('layouts.formtemplate')
 @section('notifications')
    
-{{-- @section('notifications')
-@isset($errors)                                        
-@error('document')                        
-<div class="u-size-30">
-    <div class="u-layout-col">
-        <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
-            <div class="u-container-layout u-valign-middle u-container-layout-1">
-                <h5 class="u-text u-text-default u-text-1">
-                    El documento ingresado no es correcto.
-                </h5>                         
-            </div>
-        </div>
-    </div>
-</div>
-@enderror                        
-@endisset
-@isset($wrong_document)
-<div class="u-size-30">
-    <div class="u-layout-col">
-        <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
-            <div class="u-container-layout u-valign-middle u-container-layout-1">
-                <h5 class="u-text u-text-default u-text-1">
-                    El documento ingresado no es correcto.
-                </h5>                         
-            </div>
-        </div>
-    </div>
-</div>
-@endisset
-@isset($success)
-<div class="u-size-30">
+
+
+<div id="success_div" class="u-size-30" >
     <div class="u-layout-col">
         <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
             <div class="u-container-layout u-valign-middle u-container-layout-1" style="background-color:#2cccc4">
                 <h5 class="u-text u-text-default u-text-1">El vínculo se ha enviado correctamente.</h5>
+          
             </div>
         </div>
     </div>
 </div>                        
-@endisset
-@isset($fail)           
-<div class="u-size-30">
+     
+<div id="fail_div" class="u-size-30" >
     <div class="u-layout-col">
         <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
             <div class="u-container-layout u-valign-middle u-container-layout-1">
                 <h5 class="u-text u-text-default u-text-1">
                     Usted no figura acreditado, por favor comuníquese con nosotros al teléfono <a href="tel:26005620">26005620</a>, al mail <a href="mailto:secretaria@lamennais.edu.uyuy?subject=Solicitud%20de%20Certificado"  >secretaria@lamennais.edu.uyuy</a>
-                </h5>                         
+                </h5>  
+                               
             </div>
         </div>
     </div>
 </div>                    
-@endisset
-@endsection --}}
-<div id="responseMessage" class="u-align-center u-container-style u-size-60 u-layout-cell-1"  >
-{{-- <div id="responseMessage"></div> --}}
-</div>
-<div id="errorDiv" class="u-palette-2- u-align-center u-container-style u-size-60 u-layout-cell-1"  >
-{{-- <div id="responseMessage"></div> --}}
-</div>
+
+
+
 @endsection 
 @section('form')
 <div style="display:flex; flex-direction: column; align-content:center; height:70%;">
@@ -91,10 +59,13 @@
     //     console.log("jQuery version:", $.fn.jquery);
     //     $('#certificateForm').on('submit', function (e) {
     $(function () {
+          $('#success_div').hide();
+    $('#fail_div').hide();
 
   $('#certificateForm').submit(function (e) {
             e.preventDefault(); // Prevent normal form submission
-
+  $('#success_div').hide();
+    $('#fail_div').hide();
             const form = $(this);
             const url = form.attr('action');
             const token = $('input[name="_token"]').val();
@@ -110,41 +81,43 @@
                 success: function (response) {
               
 
-                const messageDiv = `
-                    <div  
-                    style="
-                        background-color:#2cccc4;
+                // const messageDiv = `
+                //     <div  
+                //     style="
+                //         background-color:#2cccc4;
                     
-                        padding: 10px 15px;
-                        border-radius: 8px;
-                        font-weight: bold;
-                               margin-top:40px;
-                    "
+                //         padding: 10px 15px;
+                //         border-radius: 8px;
+                //         font-weight: bold;
+                //                margin-top:40px;
+                //     "
                    
-                    >
-                        ${response.message}
-                    </div>
-                `;
+                //     >
+                //         ${response.message}
+                //     </div>
+                // `;
 
-                // $('#responseMessage').hide().html(messageDiv).fadeIn();
-                $('#responseMessage').html(messageDiv);
+                // // $('#responseMessage').hide().html(messageDiv).fadeIn();
+                // $('#responseMessage').html(messageDiv);
+                $('#success_div').show();
             },
             error: function () {
-                const errorDiv = `
-                    <div 
-                    style="
-                        padding: 10px 15px;
-                        border-radius: 8px;
-                        font-weight: bold;
-                        margin-top:40px;
-                        "
+                // const errorDiv = `
+                //     <div 
+                //     style="
+                //         padding: 10px 15px;
+                //         border-radius: 8px;
+                //         font-weight: bold;
+                //         margin-top:40px;
+                //         "
               
-                    >
-                        Hubo un error al procesar la solicitud.
-                    </div>
-                `;
-                // $('#responseMessage').hide().html(errorDiv).fadeIn();
-                $('#responseMessage').html(errorDiv);
+                //     >
+                //         Hubo un error al procesar la solicitud.
+                //     </div>
+                // `;
+                // // $('#responseMessage').hide().html(errorDiv).fadeIn();
+                // $('#responseMessage').html(errorDiv);
+                 $('#fail_div').show();
             }
         });
     });
