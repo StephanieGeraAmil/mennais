@@ -83,5 +83,55 @@ background-color: #0a345e !important
           </a>
         </p>
       </div></footer>
-        @yield('custom_script')
+        {{-- @yield('custom_script') --}}
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>  
+    console.log("jQuery version:", $.fn.jquery);
+    function clean_document(element){
+        let input = $(element);
+        let input_val = input.val();
+        new_input_val = input_val.replace(/\D/g, "");
+        input.val(new_input_val);
+    }
+
+    //   $(document).ready(function () {
+    //     console.log("jQuery version:", $.fn.jquery);
+    //     $('#certificateForm').on('submit', function (e) {
+    $(function () {
+  console.log("Attaching submit handler...");
+  $('#certificateForm').submit(function (e) {
+            e.preventDefault(); // Prevent normal form submission
+
+            const form = $(this);
+            const url = form.attr('action');
+            const token = $('input[name="_token"]').val();
+            const document = $('#name-b2b6').val();
+
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: {
+                    _token: token,
+                    document: document
+                },
+                success: function (response) {
+                    // Assuming you're returning the same view with a 'success' or 'fail' key
+                    let message = '';
+                    if (response.success) {
+                        message = '<span style="color: green;">El enlace ha sido enviado a su correo.</span>';
+                    } else if (response.fail) {
+                        message = '<span style="color: red;">No se encontró el usuario o asistencia inválida.</span>';
+                    } else if (response.wrong_document) {
+                        message = '<span style="color: red;">Documento inválido.</span>';
+                    }
+                    $('#responseMessage').html(message);
+                },
+                error: function (xhr) {
+                    $('#responseMessage').html('<span style="color: red;">Hubo un error al procesar la solicitud.</span>');
+                }
+            });
+        });
+    });
+</script>  
 </body></html>
