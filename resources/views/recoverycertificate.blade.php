@@ -99,6 +99,7 @@
                 // // $('#responseMessage').hide().html(messageDiv).fadeIn();
                 // $('#responseMessage').html(messageDiv);
        $('#success_div').show();
+       $('#success_div').removeAttr('hidden').css('display', 'block');
             },
             error: function () {
                 // const errorDiv = `
@@ -118,6 +119,7 @@
                 // $('#responseMessage').html(errorDiv);
                 
                $('#fail_div').show();
+               $('#fail_div').removeAttr('hidden').css('display', 'block');
             }
         });
     });
