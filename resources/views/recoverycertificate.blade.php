@@ -111,7 +111,7 @@
                 const messageDiv = `
                     <div style="
                         background-color:#2cccc4;
-                        color: white;
+                    
                         padding: 10px 15px;
                         border-radius: 8px;
                         font-weight: bold;
@@ -123,7 +123,8 @@
                     </div>
                 `;
 
-                $('#responseMessage').hide().html(messageDiv).fadeIn();
+                // $('#responseMessage').hide().html(messageDiv).fadeIn();
+                $('#responseMessage').html(messageDiv);
             },
             error: function () {
                 const errorDiv = `
@@ -138,7 +139,8 @@
                         Hubo un error al procesar la solicitud.
                     </div>
                 `;
-                $('#responseMessage').hide().html(errorDiv).fadeIn();
+                // $('#responseMessage').hide().html(errorDiv).fadeIn();
+                $('#responseMessage').html(messageDiv);
             }
         });
     });
