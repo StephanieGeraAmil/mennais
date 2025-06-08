@@ -100,7 +100,7 @@
 @section('form')
 <div style="display:flex; flex-direction: column; align-content:center; height:70%;">
 <p class="u-text u-text-3">Ingrese su documento y le enviaremos a su mail un link donde podrá descargar el certificado.</p>
-<form class="w-full max-w-sm certificate_form" action="certificateRecoveryMail" method="POST">
+<form class="w-full max-w-sm certificate_form" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">
     @csrf
     <div class="u-form-group u-form-name u-form-group-3">
             <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
@@ -119,5 +119,41 @@
         new_input_val = input_val.replace(/\D/g, "");
         input.val(new_input_val);
     }
+
+      $(document).ready(function () {
+        $('#certificateForm').on('submit', function (e) {
+            e.preventDefault(); // Prevent normal form submission
+
+            const form = $(this);
+            const url = form.attr('action');
+            const token = $('input[name="_token"]').val();
+            const document = $('#name-b2b6').val();
+
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: {
+                    _token: token,
+                    document: document
+                },
+                success: function (response) {
+                    // Assuming you're returning the same view with a 'success' or 'fail' key
+                    let message = '';
+                    if (response.success) {
+                        message = '<span style="color: green;">El enlace ha sido enviado a su correo.</span>';
+                    } else if (response.fail) {
+                        message = '<span style="color: red;">No se encontró el usuario o asistencia inválida.</span>';
+                    } else if (response.wrong_document) {
+                        message = '<span style="color: red;">Documento inválido.</span>';
+                    }
+                    $('#responseMessage').html(message);
+                },
+                error: function (xhr) {
+                    $('#responseMessage').html('<span style="color: red;">Hubo un error al procesar la solicitud.</span>');
+                }
+            });
+        });
+    });
 </script>    
 @endsection 
+
