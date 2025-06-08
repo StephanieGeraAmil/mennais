@@ -42,6 +42,7 @@
         </div>
       </div>
     </header> --}}
+    <div class="column">
     <div class="logo-section">
                                        <img src="/images/logo.png" alt="Logo" class="logo_img">
                                    </div>
@@ -71,6 +72,7 @@
                           
                       
        
+                     </div>
                      </div>
              
 </section>

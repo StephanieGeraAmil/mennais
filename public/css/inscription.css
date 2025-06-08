@@ -356,8 +356,6 @@
     width: 100% !important;
     height: 100% !important;
     background-color: #14529b !important;
-    display: flex;
-    flex-direction: colummn;
 }
 .centered_section {
     width: 80% !important;
@@ -412,14 +410,15 @@
     object-fit: cover;
     display: block;
 }
-
+.column {
+    display: flex;
+    flex-direction: column;
+}
 @media (min-width: 800px) {
     .body-insc {
         width: 100% !important;
         height: 100% !important;
         background-color: #14529b !important;
-        display: flex;
-        flex-direction: colummn;
     }
     .centered_section {
         width: 80% !important;
@@ -472,5 +471,9 @@
         height: 100px !important;
         object-fit: cover;
         display: block;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
     }
 }
