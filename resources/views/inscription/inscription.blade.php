@@ -48,7 +48,7 @@ transformación Educativa">
                 </div>
               </div>
            
-                  <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2">
+                  <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2" style="display:flex; flex-direction:row; justify-content:center;">
                    
                   {{-- <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-3">
                     <div class="u-container-layout u-container-layout-4">
