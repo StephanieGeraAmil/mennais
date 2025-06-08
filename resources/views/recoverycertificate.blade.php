@@ -1,8 +1,16 @@
 @extends('layouts.formtemplate')
 @section('notifications')
    
+<div id="success_div" style="display:none; background-color:#2cccc4; padding:20px;">
+    <h5>El vínculo se ha enviado correctamente.</h5>
+</div>
 
-
+<div id="fail_div" style="display:none; background-color:tomato; padding:20px;">
+    <h5>
+        Usted no figura acreditado, por favor comuníquese con nosotros...
+    </h5>
+</div>
+{{-- 
 <div id="success_div" class="u-size-30" style="display:none;" >
     <div class="u-layout-col">
         <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
@@ -25,7 +33,7 @@
             </div>
         </div>
     </div>
-</div>                    
+</div>                     --}}
 
 
 
