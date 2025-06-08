@@ -356,6 +356,8 @@
     width: 100% !important;
     height: 100% !important;
     background-color: #14529b !important;
+    display: flex;
+    flex-direction: column;
 }
 .centered_section {
     width: 80% !important;
@@ -416,7 +418,7 @@
         width: 100% !important;
         height: 100% !important;
         background-color: #14529b !important;
-        diaplay: flex;
+        display: flex;
         flex-direction: column;
     }
     .centered_section {
