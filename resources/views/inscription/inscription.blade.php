@@ -48,7 +48,7 @@ transformación Educativa">
                 </div>
               </div>
            
-                  <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2">
+                  {{-- <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2"> --}}
                    
                   {{-- <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-3">
                     <div class="u-container-layout u-container-layout-4">
@@ -57,7 +57,7 @@ transformación Educativa">
     {{-- <input type="hidden" id="old_first_workshop_group_id" value={{ old('first_workshop_group_id') ?? 0 }}>
     <input type="hidden" id="old_second_workshop_group_id" value={{ old('second_workshop_group_id') ?? 0 }}> --}}
     <form action="/store_inscription" method="POST" class=""
-        source="custom" name="Inscripción Individual" style="padding: 18px 0px;" enctype="multipart/form-data">
+        source="custom" name="Inscripción Individual" style="padding: 18px auto;" enctype="multipart/form-data">
         @csrf
      
   {{-- <div class="u-form-group u-form-group-11">
@@ -151,7 +151,7 @@ transformación Educativa">
     </form>
 
                       </div>
-                    </div>
+                    {{-- </div> --}}
                   {{-- </div>
                 </div>
               </div> --}}
