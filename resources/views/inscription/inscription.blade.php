@@ -146,7 +146,7 @@ transformación Educativa">
                 <input type="file" placeholder="Adjunte un comprobante de pago" id="payment_file-4c18"
                 name="payment_file" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10"
                 >
-                <div style="width: 100%;text-align: center;"></div>
+                <div style="width: 100%;text-align: center;">                                                  </div>
             </div>
         </div>
         <div class="button-section">
