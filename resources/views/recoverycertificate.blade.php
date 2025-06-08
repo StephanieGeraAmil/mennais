@@ -55,7 +55,7 @@
 </div>                    
 @endisset
 @endsection --}}
-<div id="responseMessage" class="u-align-center u-container-style u-palette-2-base u-size-60 u-layout-cell-1" style="margin-top: 1rem;padding:0;">
+<div id="responseMessage" >
 {{-- <div id="responseMessage"></div> --}}
 </div>
 
@@ -115,7 +115,9 @@
                         padding: 10px 15px;
                         border-radius: 8px;
                         font-weight: bold;
-                    ">
+                    "
+                    class="u-align-center u-container-style u-palette-2-base u-size-60 u-layout-cell-1" 
+                    >
                         ${response.message}
                     </div>
                 `;
@@ -130,7 +132,9 @@
                         padding: 10px 15px;
                         border-radius: 8px;
                         font-weight: bold;
-                    ">
+                        "
+                       class="u-align-center u-container-style u-palette-2-base u-size-60 u-layout-cell-1" 
+                    >
                         Hubo un error al procesar la solicitud.
                     </div>
                 `;
