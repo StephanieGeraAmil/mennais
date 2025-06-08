@@ -31,7 +31,7 @@ transformación Educativa">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es"><header class="u-clearfix u-container-align-center u-custom-color-26 u-header u-sticky u-sticky-387b u-header" id="sec-055d"><div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-align-center u-image u-image-default u-image-1" src="images/logo.png" alt="" data-image-width="1024" data-image-height="117" data-lang-es="" style="margin-top:20px;">
+        <img class="u-align-center u-image u-image-default u-image-1" src="images/logo.png" alt="" data-image-width="1024" data-image-height="117" data-lang-es="" style="margin:20px 0;">
       </div></header>
     <section class="u-clearfix u-section-1" id="sec-3ffd">
       <div class="u-clearfix u-sheet u-sheet-1">
