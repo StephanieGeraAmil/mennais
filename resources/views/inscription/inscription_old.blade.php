@@ -23,50 +23,7 @@
                 <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
                     <div class="u-container-layout u-valign-middle u-container-layout-1">
                         <h5 class="u-text u-text-default u-text-1">
-                            {{-- @error('name')
-                                El  nombre no es correcto.<br />
-                            @enderror
-                             @error('lastname')
-                                El  apellido no es correcto.<br />
-                            @enderror
-                            @error('document')
-                                @if ($message == 'The document has already been taken.')
-                                    Su cédula de indentidad ya se encuentra inscripta. <BR />
-                                    Si aún no recibió el email de confirmación, comuniquese con audec.<br />
-                                @else
-                                    La cédula no es válida.<br />
-                                @endif
-                            @enderror
-                            @error('email')
-                                El  Email no es correcto.<br />
-                            @enderror
-                             @error('phone')
-                                El  teléfono no es correcto.<br />
-                            @enderror
-                             @error('extra.place')
-                                Debe seleccionar el Origen.<br />
-                            @enderror
-                            @error('type')
-                                Debe seleccionar la modalidad.<br />
-                            @enderror 
-                            @error('institution_name')
-                                El Institución no es correcta.<br />
-                            @enderror
-                            @error('institution_type')
-                                El  tipo de institución no es correcto.<br />
-                            @enderror
-                            @error('city')
-                                El  ciudad no es correcta.<br />
-                            @enderror
-                            @error('amount')
-                                El  monto depositado no es correcto.<br />
-                            @enderror
-                            @error('payment_ref')
-                                El  referencia de pago no es correcto.<br />
-                            @enderror
-                            @error('payment_file')
-                                El  comprobante de pago no es correcto.<br />
-                            @enderror --}}
+                        
                             @if ($errors->any())
     <div class="u-size-30">
         <div class="u-layout-col">
