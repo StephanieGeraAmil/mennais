@@ -117,7 +117,7 @@
                         font-weight: bold;
                                margin-top:20px;
                     "
-                    class="u-align-center u-container-style u-palette-2-base u-size-60 u-layout-cell-1" 
+                    class="u-align-center u-container-style u-size-60 u-layout-cell-1" 
                     >
                         ${response.message}
                     </div>
@@ -128,8 +128,6 @@
             error: function () {
                 const errorDiv = `
                     <div style="
-                        background-color: #e74c3c;
-                        color: white;
                         padding: 10px 15px;
                         border-radius: 8px;
                         font-weight: bold;
