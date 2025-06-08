@@ -37,21 +37,20 @@ transformación Educativa">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
-            
+            <div class="u-layout-col">
+              <div class="u-size-30">
+                <div class="u-layout-col">
+                  <div class="u-align-center u-container-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
+                    <div class="u-container-layout u-valign-middle u-container-layout-1">
+                      {{-- <h5 class="u-text u-text-default u-text-1">Error de inscripción</h5> --}}
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="u-size-30">
                 <div class="u-layout-row">
                   <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2">
-                    <div class="u-container-layout u-container-layout-2">
-                      <h4 class="u-text u-text-2">INSCRIPCIÓN INDIVIDUAL</h4>
-                      <div class="u-container-style u-expanded-width u-group u-opacity u-opacity-70 u-radius-22 u-shape-round u-white u-group-1">
-                        <div class="u-container-layout u-valign-middle u-container-layout-3">
-                          <p class="u-text u-text-3">Por favor, complete y envíe el formulario con sus datos</p>
-                        </div>
-                      </div>
-                      {{-- <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1">@yield('left-text')</div>
-                      <a href="#" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-white u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Button</a>
-                    </div> --}}
-                  </div>
+                   
                   <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-3">
                     <div class="u-container-layout u-container-layout-4">
                       <div class="u-form u-form-1">
@@ -152,7 +151,7 @@ transformación Educativa">
         </div>
     </form>
 
-                    
+                      </div>
                     </div>
                   </div>
                 </div>
