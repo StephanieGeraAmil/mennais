@@ -119,25 +119,41 @@ class InscriptionController extends Controller
         return view('recoverycertificate');
     }
 
-    public function certificateRecoveryMail(Request $request)
-    {
-        $validatedData = $request->validate([
-            'document' => 'required|string',
-        ]);
-        $document = str_replace(['.', '-', ' '], '', $validatedData['document']);
-        // if (is_numeric($document)) {
-            $user_data = UserData::where('document', $document)->first();
-            if ($user_data == null) {
-                return view('recoverycertificate')->with('fail', true);
-            }
-            if ($user_data->inscription->attendances->count() > 0) {
-                Mail::to($user_data->email)->send(new RecoveryCertificateMail($user_data->inscription));
-                return view('recoverycertificate')->with('success', true);
-            }
-            return view('recoverycertificate')->with('fail', 'Attendance error');
-        // }
-        // return view('recoverycertificate')->with('wrong_document', 'Documento Invalido');
+    // public function certificateRecoveryMail(Request $request)
+    // {
+    //     $validatedData = $request->validate([
+    //         'document' => 'required|string',
+    //     ]);
+    //     $document = str_replace(['.', '-', ' '], '', $validatedData['document']);
+    //     // if (is_numeric($document)) {
+    //         $user_data = UserData::where('document', $document)->first();
+    //         if ($user_data == null) {
+    //             return view('recoverycertificate')->with('fail', true);
+    //         }
+    //         if ($user_data->inscription->attendances->count() > 0) {
+    //             Mail::to($user_data->email)->send(new RecoveryCertificateMail($user_data->inscription));
+    //             return view('recoverycertificate')->with('success', true);
+    //         }
+    //         return view('recoverycertificate')->with('fail', 'Attendance error');
+    //     // }
+    //     // return view('recoverycertificate')->with('wrong_document', 'Documento Invalido');
+    // }
+public function certificateRecoveryMail(Request $request)
+{
+    $document = $request->input('document');
+
+    // Your logic here
+    if ($document == 'some_invalid_value') {
+        return response()->json(['wrong_document' => true]);
     }
+
+    if (/* document not found */) {
+        return response()->json(['fail' => true]);
+    }
+
+    // If success
+    return response()->json(['success' => true]);
+}
 
 
     /**
