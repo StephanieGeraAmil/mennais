@@ -122,9 +122,12 @@
         input.val(new_input_val);
     }
 
-      $(document).ready(function () {
-        console.log("jQuery version:", $.fn.jquery);
-        $('#certificateForm').on('submit', function (e) {
+    //   $(document).ready(function () {
+    //     console.log("jQuery version:", $.fn.jquery);
+    //     $('#certificateForm').on('submit', function (e) {
+    $(function () {
+  console.log("Attaching submit handler...");
+  $('#certificateForm').submit(function (e) {
             e.preventDefault(); // Prevent normal form submission
 
             const form = $(this);
