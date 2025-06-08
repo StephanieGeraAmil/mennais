@@ -42,6 +42,9 @@
         </div>
       </div>
     </header> --}}
+    <div class="logo-section">
+                                       <img src="/images/logo.png" alt="Logo" class="logo_img">
+                                   </div>
     <section class="form-section" id="sec-3ffd">
 
       
@@ -60,9 +63,7 @@
                                     @yield('left-form')
                                 </div>
                             </div> --}}
-                        <div class="logo-section">
-                                       <img src="/images/logo.png" alt="Logo" class="logo_img">
-                                   </div>
+                        
                         
                                
                                         @yield('form')
@@ -73,9 +74,7 @@
                      </div>
              
 </section>
-<style class="u-overlap-style">body {
-    background-color: #14529B !important
-}</style>
+
 
 
 {{-- <footer class="u-align-center u-clearfix u-footer u-palette-1-dark-1 u-footer" id="sec-ca3a"><div class="u-clearfix u-sheet u-sheet-1">
