@@ -9,8 +9,8 @@ Congreso
 transformación Educativa">
     <meta name="description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
     <title>Inscripcion Indivudual</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Inscripcion-Indivudual.css" media="screen">
+    <link rel="stylesheet" href="css/nicepage.css" media="screen">
+<link rel="stylesheet" href="css/inscription.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="isf.uy">
