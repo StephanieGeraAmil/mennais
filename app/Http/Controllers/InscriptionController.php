@@ -140,17 +140,21 @@ class InscriptionController extends Controller
     // }
 public function certificateRecoveryMail(Request $request)
 {
+      Log::info('📩 certificateRecoveryMail called');
     $validatedData = $request->validate([
             'document' => 'required|string',
         ]);
          $document = str_replace(['.', '-', ' '], '', $validatedData['document']);
-
+Log::info('📄 Cleaned document: ' . $document);
     // Your logic here
     if (is_numeric($document)) {
        $user_data = UserData::where('document', $document)->first();
+         Log::info('🔍 User found: ' . ($user_data ? $user_data->id : 'none'));
             if ($user_data != null) {
 
              if ($user_data->inscription->attendances->count() > 0) {
+                 Log::info('📝 Inscription found: ' . $user_data->inscription );
+                Log::info('✅ Sending mail to: ' . $user_data->email);
                 Mail::to($user_data->email)->send(new RecoveryCertificateMail($user_data->inscription));
                return response()->json(['success' => true]);
             }else{
