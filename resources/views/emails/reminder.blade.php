@@ -2,8 +2,8 @@
 <p>Te reenviamos la información para acceder al evento:</p>
 @if ($inscription->type === \App\Enums\InscriptionTypeEnum::HIBRIDO)
 {{-- <p>Jornada Presencial:</p> --}}
-<p>17 de julio 8:15 h</p>
-<p>Universidad Católica del Uruguay</p>
+<p>2 de agosto 8:00 h</p>
+<p>Teatro del Colegio La Mennais</p>
 <p>
     <img src="{!!$message->embedData(QrCode::format('png')->generate($inscription->qrUrl()), 'QrCode.png', 'image/png')!!}">
 </p>
