@@ -37,16 +37,7 @@ transformación Educativa">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
-            <div class="u-layout-col">
-              <div class="u-size-30">
-                <div class="u-layout-col">
-                  <div class="u-align-center u-container-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
-                    <div class="u-container-layout u-valign-middle u-container-layout-1">
-                      {{-- <h5 class="u-text u-text-default u-text-1">Error de inscripción</h5> --}}
-                    </div>
-                  </div>
-                </div>
-              </div>
+            
               <div class="u-size-30">
                 <div class="u-layout-row">
                   <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2">
@@ -161,7 +152,7 @@ transformación Educativa">
         </div>
     </form>
 
-                      </div>
+                    
                     </div>
                   </div>
                 </div>
