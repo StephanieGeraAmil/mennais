@@ -5,7 +5,7 @@
     <h5>El vínculo se ha enviado correctamente.</h5>
 </div>
 
-<div id="fail_div" style="display:none; background-color:tomato; padding:20px;">
+<div id="fail_div" style="display:none; background-color:#fbabab; padding:20px;">
     <h5>
         Usted no figura acreditado, por favor comuníquese con nosotros...
     </h5>
