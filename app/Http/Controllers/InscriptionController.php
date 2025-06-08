@@ -148,14 +148,19 @@ public function certificateRecoveryMail(Request $request)
     // Your logic here
     if (is_numeric($document)) {
        $user_data = UserData::where('document', $document)->first();
-            if ($user_data == null) {}
+            if ($user_data != null) {
 
              if ($user_data->inscription->attendances->count() > 0) {
                 Mail::to($user_data->email)->send(new RecoveryCertificateMail($user_data->inscription));
                return response()->json(['success' => true]);
-            }
+            }else{
   
                 return response()->json(['fail' => true]);
+                }
+            }else{
+  
+                return response()->json(['fail' => true]);
+                }
 
     // if (/* document not found */) {
     //     return response()->json(['fail' => true]);
