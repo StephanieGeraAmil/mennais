@@ -149,7 +149,7 @@ transformación Educativa">
                 <div style="width: 100%;text-align: center;">                                                  </div>
             </div>
         </div>
-        <div class="button-section">
+        <div style="margin-top:10px;">
          {{-- <div class="u-align-right u-form-group u-form-submit"> --}}
                 <a href="https://lamennais.edu.uy/cp25" 
                 class="button-save">Volver</a>
