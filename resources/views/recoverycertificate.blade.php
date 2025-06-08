@@ -115,6 +115,7 @@
                         padding: 10px 15px;
                         border-radius: 8px;
                         font-weight: bold;
+                               margin-top:20px;
                     "
                     class="u-align-center u-container-style u-palette-2-base u-size-60 u-layout-cell-1" 
                     >
@@ -132,6 +133,7 @@
                         padding: 10px 15px;
                         border-radius: 8px;
                         font-weight: bold;
+                        margin-top:20px;
                         "
                        class="u-align-center u-container-style u-palette-2-base u-size-60 u-layout-cell-1" 
                     >
