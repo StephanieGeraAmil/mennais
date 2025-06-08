@@ -7,7 +7,8 @@
 
 <div id="fail_div" style="display:none; background-color:#fbabab; padding:20px;">
     <h5>
-        Usted no figura acreditado, por favor comuníquese con nosotros...
+        Usted no figura acreditado, por favor comuníquese con nosotros al teléfono <a href="tel:26005620">26005620</a>, al mail <a href="mailto:secretaria@lamennais.edu.uyuy?subject=Solicitud%20de%20Certificado"  >secretaria@lamennais.edu.uyuy</a>
+               
     </h5>
 </div>
 {{-- 
