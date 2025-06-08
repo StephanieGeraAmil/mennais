@@ -140,19 +140,31 @@ class InscriptionController extends Controller
     // }
 public function certificateRecoveryMail(Request $request)
 {
-    $document = $request->input('document');
+    $validatedData = $request->validate([
+            'document' => 'required|string',
+        ]);
+         $document = str_replace(['.', '-', ' '], '', $validatedData['document']);
 
     // Your logic here
-    if ($document == 'some_invalid_value') {
-        return response()->json(['wrong_document' => true]);
-    }
+    if (is_numeric($document)) {
+       $user_data = UserData::where('document', $document)->first();
+            if ($user_data == null) {}
+
+             if ($user_data->inscription->attendances->count() > 0) {
+                Mail::to($user_data->email)->send(new RecoveryCertificateMail($user_data->inscription));
+               return response()->json(['success' => true]);
+            }
+  
+                return response()->json(['fail' => true]);
 
     // if (/* document not found */) {
     //     return response()->json(['fail' => true]);
     // }
 
     // If success
-    return response()->json(['success' => true]);
+
+        }
+ return response()->json(['wrong_document' => true]);
 }
 
 
