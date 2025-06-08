@@ -53,7 +53,7 @@ transformación Educativa">
                    
                   <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-3">
                     <div class="u-container-layout u-container-layout-4">
-                      <div class="u-form u-form-1">
+                      <div class="u-form u-form-1" style="display:flex; flex-direction:column; align-items:center">
                       
     {{-- <input type="hidden" id="old_first_workshop_group_id" value={{ old('first_workshop_group_id') ?? 0 }}>
     <input type="hidden" id="old_second_workshop_group_id" value={{ old('second_workshop_group_id') ?? 0 }}> --}}
