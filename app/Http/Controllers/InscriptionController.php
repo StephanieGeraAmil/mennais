@@ -147,9 +147,9 @@ public function certificateRecoveryMail(Request $request)
         return response()->json(['wrong_document' => true]);
     }
 
-    if (/* document not found */) {
-        return response()->json(['fail' => true]);
-    }
+    // if (/* document not found */) {
+    //     return response()->json(['fail' => true]);
+    // }
 
     // If success
     return response()->json(['success' => true]);
