@@ -57,6 +57,7 @@
 
 
 @section('form')
+<div style="display:flex; flex-direction: column; align-content:center;">
 <p class="u-text u-text-3">Ingrese su documento y le enviaremos a su mail un link donde podrá descargar el certificado.</p>
 <form class="w-full max-w-sm certificate_form" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">
     @csrf
@@ -68,6 +69,7 @@
         <a onclick="$(this).closest('form').submit()" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">Enviar</a>
     </div>
 </form>
+</div>
 @endsection
 @section('custom_script')
 <script>  
