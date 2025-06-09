@@ -1,5 +1,5 @@
 <p>Hola {{$inscription->userData->name}},</p>
-<p>Agradecemos su participación en el CONGRESO PEDAGÓGICO LA MENNAIS - EDUCACIÓN EMOCIONAL- Desarollando competencias para el siglo XXI</p>
+<p>Agradecemos su participación en el CONGRESO PEDAGÓGICO: EDUCACIÓN EMOCIONAL- Desarrollando competencias para el siglo XXI</p>
 
 <p>
     En el siguiente enlace puede descargarse su  certificado de asistencia: <a href="{!!$inscription->certificateUrl()!!}">{!!$inscription->certificateUrl()!!}</a>

@@ -31,7 +31,7 @@
   
     </div> --}}
         <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
-        Ha participado del Congreso Pedagógico <BR/> {{env('EVENT_NAME')}} <BR/>
+        Ha participado del Congreso Pedagógico Educación Emocional<BR/> Desarrollando competencias para el siglo XXI <BR/>
         organizado por el Colegio La Mennais, el día 2 de agosto del 2025
   
     </div>
