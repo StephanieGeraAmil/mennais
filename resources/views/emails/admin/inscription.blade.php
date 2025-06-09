@@ -29,10 +29,10 @@
             <td><a href="{{env('APP_URL').$inscription->payment?->url_payment}}">{{env('APP_URL').$inscription->payment?->url_payment}}</a></td>
         </tr> --}}
          @if($inscription->payment)
-            <tr>
+            {{-- <tr>
                 <td>Monto</td>
                 <td>{{$inscription->payment->amount_deposited}}</td>
-            </tr>
+            </tr> --}}
             <tr>
                 <td>Pago</td>
                 <td>
