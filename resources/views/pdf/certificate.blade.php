@@ -15,7 +15,7 @@
     </style>
 </head>
 <body style="width: 1024px; font-size:20px; font-family:'Open Sans',sans-serif"; >
-    <div style="width:934px; margin-top:300px; text-align:right">
+    <div style="width:934px; margin-top:280px; text-align:right">
         Montevideo, viernes 26 de julio de 2024
         </div>
     <div style="margin-left:80px; margin-top:49px">
