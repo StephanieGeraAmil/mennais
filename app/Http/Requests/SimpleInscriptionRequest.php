@@ -42,12 +42,12 @@ class SimpleInscriptionRequest extends FormRequest
         'email.email' => 'El formato del correo electrónico no es válido.',
         'city.required' => 'El campo ciudad es obligatorio.',
         'city.string' => 'La ciudad debe ser una cadena de texto.',
-        'institution_name.required' => 'El campo institución es obligatorio.',
-        'institution_name.string' => 'El nombre de la institución debe ser una cadena de texto.',
+        'institution_name.required' => 'El nombre de la institución  es obligatorio.',
+        'institution_name.string' =>  'El nombre de la institución  es obligatorio.',
         'payment_file.file' => 'El archivo de pago debe ser un archivo válido.',
         'amount.numeric' => 'El monto debe ser un número.',
-          'institution_type.required' => 'El campo tipo de institución es obligatorio.',
-        'institution_type.string' => 'El tipo de la institución debe ser una cadena de texto.',
+          'institution_type.required' => 'El campo nivel es obligatorio.',
+        'institution_type.string' => 'El campo nivel es obligatorio.',
     ];
 }
     
