@@ -44,6 +44,7 @@ class SimpleInscriptionRequest extends FormRequest
         'city.string' => 'La ciudad debe ser una cadena de texto.',
         'institution_name.required' => 'El nombre de la institución  es obligatorio.',
         'institution_name.string' =>  'El nombre de la institución  es obligatorio.',
+          'payment_file.required' => 'El archivo de pago debe ser un archivo válido.',
         'payment_file.file' => 'El archivo de pago debe ser un archivo válido.',
         'amount.numeric' => 'El monto debe ser un número.',
           'institution_type.required' => 'El campo nivel es obligatorio.',
