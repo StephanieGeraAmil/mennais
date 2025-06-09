@@ -69,9 +69,9 @@ Admin Panel
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Nombre</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">E-mail</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Documento</th>
-                                     <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Ciudad</th>
+                                     {{-- <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Ciudad</th> --}}
   <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Institución</th>
-                                                                            {{--      <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Tipo de institución</th> --}}
+                                                                                 <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Tipo de institución</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Tipo</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Pag.</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Acred.</th>
