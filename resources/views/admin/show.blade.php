@@ -116,9 +116,9 @@
                                                 <option value="Secundaria"
                                                     {{ old('type') ?? $inscription->userData->institution_type == 'Secundaria' ? 'Selected' : '' }}>
                                                     Secundaria</option>
-                                                <option value="Dirección General"
-                                                    {{ old('type') ?? $inscription->userData->institution_type == 'Dirección General' ? 'Selected' : '' }}>
-                                                    Dirección General</option>
+                                                <option value="Equipo Directivo"
+                                                    {{ old('type') ?? $inscription->userData->institution_type == 'Equipo Directivo' ? 'Selected' : '' }}>
+                                                    Equipo Directivo</option>
                                                 <option value="Otro"
                                                     {{ old('type') ?? $inscription->userData->institution_type == 'Otro' ? 'Selected' : '' }}>
                                                     Otro</option>

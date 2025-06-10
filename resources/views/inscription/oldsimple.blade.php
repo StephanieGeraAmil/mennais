@@ -101,7 +101,7 @@ transformación Educativa">
                                 <option value="Educación Inicial" data-calc="">Educación Inicial</option>
                                 <option value="Primaria" data-calc="">Primaria</option>
                                 <option value="Secundaria" data-calc="">Secundaria</option>
-                                <option value="Dirección General" data-calc="">Dirección General</option>
+                                <option value="Equipo Directivo" data-calc="">Equipo Directivo</option>
                                 <option value="Otro" data-calc="">Otro</option>
                               </select>
                               <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
