@@ -71,7 +71,7 @@ class SendReminderMail extends Command
                 // Log::info("inscription: ".$inscription);
                 $email = $inscription->userData->email;
 
-                if($email =='cgerauy@gmail.com'){
+                // if($email =='cgerauy@gmail.com'){
                
                   
                
@@ -85,10 +85,10 @@ class SendReminderMail extends Command
                                 }
                                 echo "Correo enviado a: ".$email."\n";
                                 $last_id = $inscription->id;   
-                 }       else{
-                            Log::info("NO se envio a ".$email);
-                              $last_id = $inscription->id;   
-                 }      
+                //  }       else{
+                //             Log::info("NO se envio a ".$email);
+                //               $last_id = $inscription->id;   
+                //  }      
             }
         } 
         $mail->last_id = $last_id;
