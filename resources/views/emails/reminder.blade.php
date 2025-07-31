@@ -2,7 +2,7 @@
 <p>Te reenviamos la información para acceder al evento:</p>
 @if ($inscription->type === \App\Enums\InscriptionTypeEnum::HIBRIDO)
 {{-- <p>Jornada Presencial:</p> --}}
-<p>2 de agosto 8:00 h</p>
+<p>Sábado 2 de agosto 8:00 h</p>
 <p>Teatro del Colegio La Mennais</p>
 
 <p>Durante el receso del mediodía, hay diferentes opciones para el almuerzo:</p>
