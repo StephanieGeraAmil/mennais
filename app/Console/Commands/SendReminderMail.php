@@ -59,10 +59,10 @@ class SendReminderMail extends Command
          $inscriptions_list = Inscription::where('id', '>', $mail->last_id)
             ->take(100)
             ->get();
-         //  $inscriptions_list = Inscription::where('type', 'hibrido')
-         //   ->where('id', '>', $mail->last_id)
-         //   ->take(100)
-         //   ->get();
+                                                //  $inscriptions_list = Inscription::where('type', 'hibrido')
+                                                //   ->where('id', '>', $mail->last_id)
+                                                //   ->take(100)
+                                                //   ->get();
         $last_id = 0;
         foreach($inscriptions_list as $inscription){ 
             // $qrCode = QrCode::format('png')->generate($inscription->qrUrl());
@@ -70,16 +70,20 @@ class SendReminderMail extends Command
             if($inscription->id > 0){
                 // Log::info("inscription: ".$inscription);
                 $email = $inscription->userData->email;
-                Log::info("email: ".$email);
-                try {
-                   Mail::to($email)->send(new ReminderMail($inscription));
-                // Mail::to($email)->send(new ReminderMail($inscription, $qrCodeData));
-                } catch (\Throwable $th) {
-                    Log::error("error: ".$th);
-                    Log::error("Fallo email: ".$email);
-                }
-                echo "Correo enviado a: ".$email."\n";
-                $last_id = $inscription->id;                
+                if(isset($email) && $email != null && $email == 'cgerauy@gmail.com'){
+                  
+               
+                                Log::info("email: ".$email);
+                                try {
+                                Mail::to($email)->send(new ReminderMail($inscription));
+                                // Mail::to($email)->send(new ReminderMail($inscription, $qrCodeData));
+                                } catch (\Throwable $th) {
+                                    Log::error("error: ".$th);
+                                    Log::error("Fallo email: ".$email);
+                                }
+                                echo "Correo enviado a: ".$email."\n";
+                                $last_id = $inscription->id;   
+                 }             
             }
         } 
         $mail->last_id = $last_id;

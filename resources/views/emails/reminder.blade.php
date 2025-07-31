@@ -4,6 +4,19 @@
 {{-- <p>Jornada Presencial:</p> --}}
 <p>2 de agosto 8:00 h</p>
 <p>Teatro del Colegio La Mennais</p>
+
+<p>Durante el receso del mediodía, hay diferentes opciones para el almuerzo:</p>
+<ul>
+    <li>
+Cantina abierta del colegio, para quienes deseen comprar algo allí.
+</li>
+   <li>
+Espacio de comedor disponible para quienes prefieran traer su vianda (cómodo, luminoso y equipado con microondas).
+</li>
+   <li>
+ En las inmediaciones del colegio hay locales gastronómicos para almorzar cómodamente (Portones Shopping y variedad de propuestas alrededor de la calle Orinoco, entre otras).
+</li>
+</ul>
 <p>
     <img src="{!!$message->embedData(QrCode::format('png')->generate($inscription->qrUrl()), 'QrCode.png', 'image/png')!!}">
 </p>
