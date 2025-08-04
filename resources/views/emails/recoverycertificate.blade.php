@@ -5,7 +5,7 @@
     En el siguiente enlace puede descargarse su  certificado de asistencia: <a href="{!!$inscription->certificateUrl()!!}">{!!$inscription->certificateUrl()!!}</a>
 </p>
 <p>
-Le compartimos el material de los expositores: <a href="  https://tinyurl.com/CongresoPedagogico"> https://tinyurl.com/CongresoPedagogico</a>
+Le compartimos el material de los expositores: <a href="https://tinyurl.com/CongresoPedagogico"> https://tinyurl.com/CongresoPedagogico</a>
 </p>
 {{-- 
 
