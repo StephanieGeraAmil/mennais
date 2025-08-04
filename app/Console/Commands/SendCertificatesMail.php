@@ -76,14 +76,14 @@ class SendCertificatesMail extends Command
                 $attendance_list = Attendance::where('inscription_id', $inscription->id)->get();
                 if ($attendance_list->isNotEmpty()) {
                     $email = $inscription->userData->email;
-                     if($email =='cgerauy@gmail.com'){
+                    //  if($email =='cgerauy@gmail.com'){
                     Log::info("email: ".$email);
                     Mail::to($email)->send(new RecoveryCertificateMail($inscription));
                     echo "Correo enviado a: ".$email."\n";
                     $last_id = $inscription->id;      
-                     } else{
-                            Log::info("NO se envio a ".$email);
-                              $last_id = $inscription->id;   
+                    //  } else{
+                    //         Log::info("NO se envio a ".$email);
+                    //           $last_id = $inscription->id;   
                  }   
                 }       
             }
