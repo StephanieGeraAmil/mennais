@@ -84,7 +84,7 @@ class SendCertificatesMail extends Command
                     //  } else{
                     //         Log::info("NO se envio a ".$email);
                     //           $last_id = $inscription->id;   
-                 }   
+                //  }   
                 }       
             }
         } 
